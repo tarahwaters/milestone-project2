@@ -44,6 +44,11 @@ A **deployed link** to the live website can be found here [Differentiated Cells 
 
 ## Surface
 ### Color Scheme
+
+[coolors.co](https://coolors.co/) was used to create a color palette for the design.
+
+![Biology Game Color Scheme](/documentation/readme/colorscheme.png "Biology Game Color Scheme")
+
 ### Typography
 
 [fontjoy.com](https://fontjoy.com/) was used to create aesthetic font pairings for the project.
