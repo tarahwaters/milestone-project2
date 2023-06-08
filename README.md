@@ -45,7 +45,18 @@ A **deployed link** to the live website can be found here [Differentiated Cells 
 ## Surface
 ### Color Scheme
 ### Typography
+
+[fontjoy.com](https://fontjoy.com/) was used to create aesthetic font pairings for the project.
+
+- **Kalam** - for the main title
+- **Preahvihear** - for subtitles and headings
+- **Sriracha** - for descriptive text
+- with a backup font of **"Sans serif"**
+
+![Font pairings](/documentation/readme/typography.jpg "Font pairings")
+
 ### Wireframes
+
 
 
 
