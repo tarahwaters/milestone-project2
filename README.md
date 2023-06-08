@@ -57,6 +57,37 @@ A **deployed link** to the live website can be found here [Differentiated Cells 
 
 ### Wireframes
 
+These were the initial wireframes created for the project during the planning stage:
+
+**1. Game Grid Wireframes**
+
+Mobile and Table Devices
+
+![GameGrid Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-gamegrid.png "GameGrid Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+![GameGrid Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-gamegrid.png "GameGrid Wireframe for Desktop Devices")
+
+**2. HowToPlay Modal Wireframes**
+
+Mobile and Table Devices
+
+![HowToPlay Modal Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-howtoplay-modal.png "HowToPlay Modal Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+![HowToPlay Modal Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-howtoplay-modal.png "HowToPlay Modal Wireframe for Desktop Devices")
+
+**3. WinMessage Modal Wireframes**
+
+Mobile and Tablet Devices
+
+![WinMessage Modal Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-winmessage-modal.png "WinMessage Modal Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+![WinMessage Modal Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-winmessage-modal.png "WinMessage Modal Wireframe for Desktop Devices")
 
 
 
