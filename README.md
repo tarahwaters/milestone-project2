@@ -54,7 +54,7 @@ As a site owner I would like:
 - to provide users with a visually appealing game that is also accessible
 - to provide users with an option to increase game difficulty
 - to provide users with the rules of how to play the game in an easy-to-read format
-- to give users the option to turn audio on/off and to view a summary of the revision notes once they complete the game
+- **to give users the option to turn audio on/off and to view a summary of the revision notes once they complete the game**
 - to provide users with a site that is straight forward to navigate
 
 
