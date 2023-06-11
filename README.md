@@ -76,6 +76,23 @@ As a site owner I would like:
 ## Scope
 ### Trade Offs
 
+The table below shows the features that should be implemented to make an appealing and functional interactive game for users. Due to time constraints and my current skill level, some of these features are not implemented at this stage.
+
+[X] indicates opportunities that were considered at the planning stage but were deemed not viable/feasible for this project sprint.
+Y / N indicates a Yes / No as to whether each opportunity was acheived and implemented at this stage.
+
+| Opportunity                                                      | Importance | Viability / Feasibility | Outcome |
+| ---------------------------------------------------------------- | :--------: | :---------------------: | :------:|
+| Card-matching memory game that works by user clicking cards      |     5      |            5            |         |
+| Timer and move counter that provide up-to-date feedback to user  |     5      |            5            |         |
+| HowToPlay modal with set of instructions (with clickable button) |     5      |            5            |         |
+| WinMessage modal that pops up when user has completed the game   |     5      |            5            |         |
+| Option to restart (with button on main page, also via Win modal) |     5      |            5            |         |
+| Increase in challenge (adding more complex set of cards to match)|     4      |            4            |         |
+| Option to adjust audio settings [X]                              |     3      |            3            |         |
+| Access to summary notes page after winning a game [X]            |     3      |            2            |         |
+
+
 ---
 
 ## Structure
