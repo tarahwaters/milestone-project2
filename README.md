@@ -164,7 +164,7 @@ These were the initial wireframes created for the project during the planning st
 
 ### Card Design
 
-Since the images of specialised cells available online were not to my liking and often weren't consistent in their design, I decided to draw my own using the Procreate app on my iPad. Here is the the full image containing all the cell drawings used in the game. These were then cropped to add to the individual cards.
+Since the images of specialised cells available online were consistent or visually appealing enough in their design, I decided to draw my own using the Procreate app on my iPad. Here is the the full image containing all the cell drawings used in the game. These were then cropped to add to the individual cards.
 
 ![Specialised Cells Full Image](/documentation/readme/specialised-cells-full.png "Full image containing all Specialised Cells used on the game cards")
 
