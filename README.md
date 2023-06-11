@@ -27,6 +27,9 @@ A **deployed link** to the live website can be found here [Specialised Cells Gam
 ## UX:
 ## Strategy
 ### Target Audience
+
+The target audience of this game are students studying Biology at high school level (GCSE or equvivalent) and also those interested in learning some biological facts. The topic of Specialised Cells is included in the UK biology curriculum at KS3 and GCSE (including iGCSE) and this game can therefore be used as a fun revision / learning tool. It is also designed to be accessible without prior biology knowledge so hopefully will be enjoyed by any user of any age.
+
 ### User Requirements and Expectations
 ### User Stories
 
