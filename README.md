@@ -89,13 +89,18 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | WinMessage modal that pops up when user has completed the game   |     5      |            5            |         |
 | Option to restart (with button on main page, also via Win modal) |     5      |            5            |         |
 | Increase in challenge (adding more complex set of cards to match)|     4      |            4            |         |
-| Option to adjust audio settings [X]                              |     3      |            3            |         |
-| Access to summary notes page after winning a game [X]            |     3      |            2            |         |
+| Access to summary notes page after winning a game                |     3      |            4            |         |
+| Option to adjust audio settings [X]                              |     3      |            2            |         |
+
 
 
 ---
 
 ## Structure
+
+### Features
+### Existing Features
+### Future Features
 
 ---
 
