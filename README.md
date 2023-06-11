@@ -30,6 +30,33 @@ A **deployed link** to the live website can be found here [Specialised Cells Gam
 ### User Requirements and Expectations
 ### User Stories
 
+#### User
+As a user I would like:
+- to play a card-matching memory game presented in a visually appealing format
+- to learn or revise knowledge about specialised cell types in a fun way
+- to play a game with the option of increasing the complexity/challenge
+- to read the rules of the game
+- to navigate through the elements of the game / website easily
+- **to adjust settings to suit my game-play requirements e.g.**
+    - **whether to play in-game audio**
+    - **choosing the level of challenge**
+- to receive ongoing feedback about my progression through the game
+- to have fun while playing the game (and also learn!).
+- to learn some interesting facts about specialised cells
+- **to have the option of viewing and downloading a summary of the cell types and their functions**
+- to restart the game to play again
+
+#### Site Owner
+As a site owner I would like:
+- to enjoy the experience of playing the game
+- to provide users with an enjoyable and intuitive gaming experience
+- to provide users with the opportunity to learn or revise their biology knowledge
+- to provide users with a visually appealing game that is also accessible
+- to provide users with an option to increase game difficulty
+- to provide users with the rules of how to play the game in an easy-to-read format
+- to give users the option to turn audio on/off and to view a summary of the revision notes once they complete the game
+- to provide users with a site that is straight forward to navigate
+
 
 ---
 
