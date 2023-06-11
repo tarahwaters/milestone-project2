@@ -72,6 +72,42 @@ As a site owner I would like:
 
 ---
 
+## Skeleton
+
+### Wireframes
+
+These were the initial wireframes created for the project during the planning stage:
+
+**1. Game Grid Wireframes**
+
+Mobile and Table Devices
+
+[GameGrid Wireframe for Mobile and Tablet Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-mob-gamegrid.png "GameGrid Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+[GameGrid Wireframe for Desktop Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-desktop-gamegrid.png "GameGrid Wireframe for Desktop Devices")
+
+**2. HowToPlay Modal Wireframes**
+
+Mobile and Table Devices
+
+[HowToPlay Modal Wireframe for Mobile and Tablet Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-mob-howtoplay.png "HowToPlay Modal Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+[HowToPlay Modal Wireframe for Desktop Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-desktop-howtoplay.png "HowToPlay Modal Wireframe for Desktop Devices")
+
+**3. WinMessage Modal Wireframes**
+
+Mobile and Tablet Devices
+
+[WinMessage Modal Wireframe for Mobile and Tablet Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-mob-winmessage.png "WinMessage Modal Wireframe for Mobile and Tablet Devices")
+
+Desktop Devices
+
+[WinMessage Modal Wireframe for Desktop Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-desktop-winmessage.png "WinMessage Modal Wireframe for Desktop Devices")
+
 ## Surface
 ### Color Scheme
 
@@ -95,41 +131,6 @@ As a site owner I would like:
 Since the images of specialised cells available online were not to my liking and often weren't consistent in their design, I decided to draw my own using the Procreate app on my iPad. Here is the the full image containing all the cell drawings used in the game. These were then cropped to add to the individual cards.
 
 ![Specialised Cells Full Image](/documentation/readme/specialised-cells-full.png "Full image containing all Specialised Cells used on the game cards")
-
-
-### Wireframes
-
-These were the initial wireframes created for the project during the planning stage:
-
-**1. Game Grid Wireframes**
-
-Mobile and Table Devices
-
-![GameGrid Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-gamegrid.png "GameGrid Wireframe for Mobile and Tablet Devices")
-
-Desktop Devices
-
-![GameGrid Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-gamegrid.png "GameGrid Wireframe for Desktop Devices")
-
-**2. HowToPlay Modal Wireframes**
-
-Mobile and Table Devices
-
-![HowToPlay Modal Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-howtoplay.png "HowToPlay Modal Wireframe for Mobile and Tablet Devices")
-
-Desktop Devices
-
-![HowToPlay Modal Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-howtoplay.png "HowToPlay Modal Wireframe for Desktop Devices")
-
-**3. WinMessage Modal Wireframes**
-
-Mobile and Tablet Devices
-
-![WinMessage Modal Wireframe for Mobile and Tablet Devices](/documentation/readme/wireframe-mob-winmessage.png "WinMessage Modal Wireframe for Mobile and Tablet Devices")
-
-Desktop Devices
-
-![WinMessage Modal Wireframe for Desktop Devices](/documentation/readme/wireframe-desktop-winmessage.png "WinMessage Modal Wireframe for Desktop Devices")
 
 
 
