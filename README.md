@@ -76,7 +76,7 @@ As a site owner I would like:
 ## Scope
 ### Trade Offs
 
-The table below shows the features that should be implemented to make an appealing and functional interactive game for users. Due to time constraints and my current skill level, some of these features are not implemented at this stage.
+Considering the user requirements and expectations, the table below shows the features that should be implemented to make an appealing and functional interactive game for users. Due to time constraints and my current skill level, some of these features are not implemented at this stage.
 
 [X] indicates opportunities that were considered at the planning stage but were deemed not viable/feasible for this project sprint.
 Y / N indicates a Yes / No as to whether each opportunity was acheived and implemented at this stage.
