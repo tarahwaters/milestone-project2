@@ -106,6 +106,22 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ## Skeleton
 
+Wireframes for the website were created using the UI wireframe tool, [Balsamiq](https://balsamiq.com/), to plan the layout across desktop, tablet and mobile devices.
+
+The layout and design was kept consistent across the pages / devices as much as possible.
+
+The main game page consists of:
+
+- A title
+- A subtitle description of the game
+- A gamegrid of 16 divs displaying the rear side of the cards - two cards can be flipped over at once to make a match
+- A gamestart modal which allows the user to select the challenge level of the game before starting (or open the howtoplay modal)
+- A moves counter that is on the top right corner of the gamegrid - displays the number of moves made during a game
+- A countdown timer is on the top left corner ofthe gamegrid - displays how many seconds are remaining during a game
+- A restart button is underneath the gamegrid - gives the user the option to reset the game to the beginning
+- A howtoplay button is underneath the gamegrid - gives the user the option to view the game instructions
+- A footer which contains a copyright statement
+
 ### Wireframes
 
 These were the initial wireframes created for the project during the planning stage:
