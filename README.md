@@ -168,5 +168,13 @@ Since the images of specialised cells available online were consistent or visual
 
 ![Specialised Cells Full Image](/documentation/readme/specialised-cells-full.png "Full image containing all Specialised Cells used on the game cards")
 
+### Extra Learning Resource
+
+As a prize for completing the game, users have access to a downloadable learning resource which summarises all the cell types used in the game.
+Learners can print off the flashcards and use them for their biology revision.
+
+![Specialised Cells Flashcards Page 1](/documentation/readme/specialised-cells-flashcards-page1.png "Specialised Cells Flashcards Page 1")
+![Specialised Cells Flashcards Page 2](/documentation/readme/specialised-cells-flashcards-page2.png "Specialised Cells Flashcards Page 2")
+
 
 
