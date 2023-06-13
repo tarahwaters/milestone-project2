@@ -49,6 +49,7 @@ As a user I would like:
 - to learn or revise knowledge about specialised cell types in a fun way
 - to play a game with the option of increasing the complexity/challenge
 - to read the rules of the game
+- to access the prelearning material before testing their knowledge during the game
 - to navigate through the elements of the game / website easily
 - **to adjust settings to suit my game-play requirements e.g.**
     - **whether to play in-game audio**
@@ -89,7 +90,7 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | WinMessage modal that pops up when user has completed the game   |     5      |            5            |         |
 | Option to restart (with button on main page, also via Win modal) |     5      |            5            |         |
 | Increase in challenge (adding more complex set of cards to match)|     4      |            4            |         |
-| Access to summary notes page after winning a game                |     3      |            4            |         |
+| Access to summary notes page for revision / download afer game   |     3      |            4            |         |
 | Option to adjust audio settings [X]                              |     3      |            2            |         |
 
 
@@ -119,7 +120,7 @@ The main game page consists of:
 - A moves counter that is on the top right corner of the gamegrid - displays the number of moves made during a game
 - A countdown timer is on the top left corner ofthe gamegrid - displays how many seconds are remaining during a game
 - A restart button is underneath the gamegrid - gives the user the option to reset the game to the beginning
-- A howtoplay button is underneath the gamegrid - gives the user the option to view the game instructions
+- A howtoplay button is underneath the gamegrid - gives the user the option to view the game instructions and access the prelearning material
 - A footer which contains a copyright statement
 
 ### Wireframes
