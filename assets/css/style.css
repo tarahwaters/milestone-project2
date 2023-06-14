@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Preahvihear&family=Sriracha&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #EBF8B8;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+h1 {
+    font-family: 'Kalam', sans-serif;
+}
