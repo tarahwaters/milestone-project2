@@ -14,4 +14,8 @@ body {
 
 h1 {
     font-family: 'Kalam', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
 }
