@@ -20,6 +20,13 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Kalam', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
 img {
     width: 100px;
 }
