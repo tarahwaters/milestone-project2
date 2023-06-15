@@ -177,5 +177,12 @@ Learners can print off the flashcards and use them for their biology revision.
 ![Specialised Cells Flashcards Page 1](/documentation/readme/specialised-cells-flashcards-page1.png "Specialised Cells Flashcards Page 1")
 ![Specialised Cells Flashcards Page 2](/documentation/readme/specialised-cells-flashcards-page2.png "Specialised Cells Flashcards Page 2")
 
+## References
+
+- [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
+- **Moira Hartigan's PP2** [Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) - deployed project and [github](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
+- **Nuala Greenwood's MS2** [Lord Of The Rings Game](https://nualagr.github.io/the-lord-of-the-rings-game/) - deployed project and [github](https://github.com/nualagr/the-lord-of-the-rings-game)
+- **Louise Jones' MS2** [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
+
 
 
