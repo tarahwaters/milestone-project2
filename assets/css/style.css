@@ -43,6 +43,7 @@ h2 {
     position: relative;
     transform:scale(1);
     transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 /*-- credit - marine-ferreira tutorial https://www.youtube.com/watch?v=ZniVgo8U7ek&ab_channel=freeCodeCamp.org */
