@@ -49,7 +49,15 @@ h2 {
     height: 100%;
     position: absolute;
     border: 2px solid deeppink;
-    background-color: #FFE787;
+    background-color: #ffe787;
+}
+
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid deeppink;
+    background-color: #2176FF;
 }
 
 .front-face-function {
@@ -62,8 +70,6 @@ h2 {
         text-align: center;
         padding: 1rem 0.2rem;
 }
-
-.back-face,
 
 img {
     width: 100px;
