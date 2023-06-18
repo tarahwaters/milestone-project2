@@ -33,6 +33,7 @@ h2 {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .game-card {
@@ -47,6 +48,10 @@ h2 {
 .game-card:active {
     transform: scale(.97);
     transition: transform .2s;
+}
+
+.game-card.flip {
+    transform: rotateY(180deg); 
 }
 
 .front-face {
