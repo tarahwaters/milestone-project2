@@ -44,12 +44,26 @@ h2 {
     border: 2px solid lime;
 }
 
-.front-face, .back-face, .front-face-function {
+.front-face {
     width: 100%;
     height: 100%;
     position: absolute;
     border: 2px solid deeppink;
+    background-color: #FFE787;
 }
+
+.front-face-function {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: 2px solid deeppink;
+        background-color: #FFE787;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 1rem 0.2rem;
+}
+
+.back-face,
 
 img {
     width: 100px;
