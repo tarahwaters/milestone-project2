@@ -61,6 +61,7 @@ h2 {
     height: 100%;
     position: absolute;
     background-color: #ffe787;
+    transform: rotateY(180deg);
 }
 
 .back-face {
@@ -79,6 +80,7 @@ h2 {
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem 0.2rem;
+    transform: rotateY(180deg);
 }
 
 img {
