@@ -33,7 +33,6 @@ h2 {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid lime;
 }
 
 .game-card {
@@ -41,14 +40,12 @@ h2 {
     height: calc(25% - 10px);
     margin: 5px;
     position: relative;
-    border: 2px solid lime;
 }
 
 .front-face {
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 2px solid deeppink;
     background-color: #ffe787;
 }
 
@@ -56,19 +53,17 @@ h2 {
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 2px solid deeppink;
     background-color: #2176FF;
 }
 
 .front-face-function {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border: 2px solid deeppink;
-        background-color: #FFE787;
-        font-size: 0.8rem;
-        text-align: center;
-        padding: 1rem 0.2rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFE787;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem 0.2rem;
 }
 
 img {
