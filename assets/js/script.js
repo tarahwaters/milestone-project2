@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll('.game-card');
 
 let hasFlippedCard = false;
+let lockMoves = false;
 let firstCard, secondCard;
 
 /**
@@ -8,6 +9,7 @@ let firstCard, secondCard;
  * before checking if they are a match
  */
 function flipCard() {
+  if (lockMoves) return;
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
@@ -44,9 +46,13 @@ function disableCards() {
  * if cards are not a match, then they are flipped back after a timeout delay 
  */
 function unflipCards() {
+  lockMoves = true;
+
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
+
+    lockMoves = false;
   }, 2000);
 }
 
