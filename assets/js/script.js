@@ -58,6 +58,11 @@ function unflipCards() {
   }, 2000);
 }
 
+function resetBoard() {
+  [hasFlippedCard, lockMoves] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
 /**
  * responds to a click event and then runs the flipCard function
  */
