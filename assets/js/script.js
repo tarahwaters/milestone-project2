@@ -15,9 +15,16 @@ function flipCard() {
     hasFlippedCard = false;
     secondCard = this;
 
-  // do the two cards match?
-  console.log(firstCard.dataset.match);
-  console.log(secondCard.dataset.match);
+    // do the two cards match?
+    if (firstCard.dataset.match === secondCard.dataset.match) {
+      // it's a matching pair!
+      firstCard.removeEventListener('click', flipCard);
+      secondCard.removeEventListener('click', flipCard);
+    } else {
+        // it's not a matching pair..
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }
   }
 }
 
