@@ -3,6 +3,9 @@ const cards = document.querySelectorAll('.game-card');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+/**
+ *   
+ */
 function flipCard() {
   this.classList.add('flip');
 
@@ -17,23 +20,25 @@ function flipCard() {
   }
 }
 
+/**
+ * checks the two clicked cards for a match  
+ */
 function checkForMatch() {
-    // do the two cards match?
-    if (firstCard.dataset.match === secondCard.dataset.match) {
-    // it's a matching pair!
-      disableCards();
-    } else {
-    // it's not a matching pair..
-    // delay the reset flip by adding a timeout
-       unflipCards(); 
-    }
-}
+  let cardMatch = firstCard.dataset.match === secondCard.dataset.match;
 
+  cardMatch ? disableCards() : unflipCards;
+
+/**
+ * if there is a match, then the cards are disabled from flipping back
+ */
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 }
 
+/**
+ * if cards are not a match, then they are flipped back after a timeout delay 
+ */
 function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
