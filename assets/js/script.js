@@ -10,6 +10,8 @@ let firstCard, secondCard;
  */
 function flipCard() {
   if (lockMoves) return;
+  if (this === firstCard) return;
+
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
