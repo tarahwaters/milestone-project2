@@ -4,7 +4,8 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 
 /**
- *   
+ * flips and stores the first and second clicked cards 
+ * before checking if they are a match
  */
 function flipCard() {
   this.classList.add('flip');
