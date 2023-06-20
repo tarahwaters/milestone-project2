@@ -4,14 +4,18 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+  this.classList.add('flip');
 
   if (!hasFlippedCard) {
     // first click
-    console.log("in has flipped if statement....")
     hasFlippedCard = true;
     firstCard = this;
+  } else {
+    // second click
+    hasFlippedCard = false;
+    secondCard = this;
 
-    console.log("result : ", {hasFlippedCard, firstCard});
+    console.log({firstCard, secondCard});
   }
 }
 
