@@ -1,17 +1,17 @@
 const cards = document.querySelectorAll('.game-card');
 
-let hasFlippedCard = false
+let hasFlippedCard = false;
 let firstCard, secondCard;
 
 function flipCard() {
-  this.classList.add('flip');
 
-  if (hasFlippedCard) {
+  if (!hasFlippedCard) {
     // first click
+    console.log("in has flipped if statement....")
     hasFlippedCard = true;
     firstCard = this;
 
-    console.log({hasFlippedCard, firstCard});
+    console.log("result : ", {hasFlippedCard, firstCard});
   }
 }
 
