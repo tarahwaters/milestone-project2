@@ -50,4 +50,7 @@ function unflipCards() {
   }, 2000);
 }
 
+/**
+ * responds to a click event and then runs the flipCard function
+ */
 cards.forEach(card => card.addEventListener('click', flipCard));
