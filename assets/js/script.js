@@ -28,7 +28,8 @@ function flipCard() {
 function checkForMatch() {
   let cardMatch = firstCard.dataset.match === secondCard.dataset.match;
 
-  cardMatch ? disableCards() : unflipCards;
+  cardMatch ? disableCards() : unflipCards();
+}
 
 /**
  * if there is a match, then the cards are disabled from flipping back
