@@ -13,11 +13,13 @@ function flipCard() {
     // first card click
     hasFlippedCard = true;
     firstCard = this;
-  } else {
+    return;
+  }
     // second card click
     hasFlippedCard = false;
     secondCard = this;
-  }
+
+    checkForMatch();
 }
 
 /**
