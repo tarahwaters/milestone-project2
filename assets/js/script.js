@@ -22,7 +22,7 @@ function flipCard() {
       secondCard.removeEventListener('click', flipCard);
     } else {
         // it's not a matching pair..
-        // first, delay the reset flip by adding a timeout
+        // delay the reset flip by adding a timeout
         setTimeout(() => {
           firstCard.classList.remove('flip');
           secondCard.classList.remove('flip');
