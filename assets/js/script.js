@@ -7,15 +7,17 @@ function flipCard() {
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
-    // first click
+    // first card click
     hasFlippedCard = true;
     firstCard = this;
   } else {
-    // second click
+    // second card click
     hasFlippedCard = false;
     secondCard = this;
 
-    console.log({firstCard, secondCard});
+  // do the two cards match?
+  console.log(firstCard.dataset.match);
+  console.log(secondCard.dataset.match);
   }
 }
 
