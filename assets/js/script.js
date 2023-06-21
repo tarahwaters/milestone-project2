@@ -61,11 +61,18 @@ function unflipCards() {
   }, 2000);
 }
 
+/**
+ * reset the flipped card pairs after each round 
+ */
 function resetBoard() {
   [hasFlippedCard, lockMoves] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
+/**
+ * currently not working
+ * shuffle each set of cards based on its type: either cell image / function
+ */
  (function shuffle() {
    cardsCells.forEach(card => {
      let ramdomPos = Math.floor(Math.random() * 8);
