@@ -27,6 +27,12 @@ h2 {
     text-align: center;
 }
 
+.game-feedback {
+    width: 620px;
+    margin: auto;
+    padding: 1rem;
+}
+
 .cell-card-container, .descriptive-card-container {
     width: 600px;
     height: 320px;
