@@ -27,9 +27,9 @@ h2 {
     text-align: center;
 }
 
-.game-grid {
-    width: 640px;
-    height: 640px;
+.cell-card-container, .descriptive-card-container {
+    width: 600px;
+    height: 320px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@ h2 {
 
 .game-card {
     width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    height: calc(50% - 10px);
     margin: 5px;
     position: relative;
     transform:scale(1);
