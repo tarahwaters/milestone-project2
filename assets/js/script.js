@@ -70,8 +70,8 @@ function resetBoard() {
 }
 
 /**
- * currently not working
  * shuffle each set of cards based on its type: either cell image / function
+ * within the separate game card containers
  */
  (function shuffle() {
    cardsCells.forEach(card => {
