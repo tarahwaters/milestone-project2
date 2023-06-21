@@ -1,4 +1,6 @@
-const cards = document.querySelectorAll('.game-card');
+const allCards = document.querySelectorAll('.game-card');
+const cardsCells = document.querySelectorAll('cell-card');
+const cardsFunctions = document.querySelectorAll('function-card');
 
 let hasFlippedCard = false;
 let lockMoves = false;
@@ -64,7 +66,21 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+ (function shuffle() {
+   cardsCells.forEach(card => {
+     let ramdomPos = Math.floor(Math.random() * 8);
+     card.style.order = ramdomPos;
+   });
+ })();
+
+(function shuffle() {
+   cardsFunctions.forEach(card => {
+     let ramdomPos = Math.floor(Math.random() * 8);
+     card.style.order = ramdomPos;
+   });
+ })();
+
 /**
  * responds to a click event and then runs the flipCard function
  */
-cards.forEach(card => card.addEventListener('click', flipCard));
+allCards.forEach(card => card.addEventListener('click', flipCard));
