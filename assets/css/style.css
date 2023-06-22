@@ -29,7 +29,7 @@ h2 {
 
 /*-- game timer and move counter --*/
 
-.game-feedback {
+#game-feedback {
     width: 620px;
     margin: auto;
     padding: 1rem;
@@ -37,7 +37,7 @@ h2 {
 
 /*-- game cards --*/
 
-.cell-card-container, .descriptive-card-container {
+#cell-card-container, #descriptive-card-container {
     width: 600px;
     height: 320px;
     margin: auto;
@@ -95,7 +95,7 @@ h2 {
 
 /*-- game buttons --*/
 
-.button-container {
+#button-container {
     display: flex;
     justify-content: center;
     align-items: center;

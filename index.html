@@ -26,9 +26,9 @@
 
     <!-- code template followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
     <main>
-        <section class="game-container">
-            <div class="game-grid">
-                <div class="game-feedback row justify-content-between">
+        <section id="game-container">
+            <div id="game-grid">
+                <div id="game-feedback" class="row justify-content-between">
                     <span id="timer" class="col-4">
                         Timer
                     </span>
@@ -36,7 +36,7 @@
                         Move counter
                     </span>
                 </div>
-                <div class="cell-card-container">
+                <div id="cell-card-container">
                     <div class="game-card cell-card" data-match="cilia-cell">
                         <img class="front-face" src="assets/images/cards/cilia-cell.webp" alt="Ciliated Epithelial Cell">
                         <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="descriptive-card-container">
+                <div id="descriptive-card-container">
                     <div class="game-card function-card" data-match="cilia-cell">
                         <div class="front-face-function">This cell uses tiny hairs to trap bacteria and dust in air passages.</div>
                         <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="button-container">
+            <div id="button-container">
                 <button class="game-btn" onclick="restartGame()">Restart</button> 
                 <button id="modalBtn" class="game-btn">How to Play</button>
             </div>
@@ -122,7 +122,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         Copyright
     </footer>
     <!-- js script -->
