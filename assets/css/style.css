@@ -94,3 +94,15 @@ h2 {
 }
 
 /*-- game buttons --*/
+
+.game-btn {
+    text-decoration: none;
+    color: #FFE787;
+    border: 1px solid #2176FF;
+    background-color: #2176FF;
+    margin: 10px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
