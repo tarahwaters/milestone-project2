@@ -1,6 +1,7 @@
 const allCards = document.querySelectorAll('.game-card');
 const cardsCells = document.querySelectorAll('.cell-card');
 const cardsFunctions = document.querySelectorAll('.function-card');
+const restartBtn = document.getElementById('restartBtn');
 
 let hasFlippedCard = false;
 let lockMoves = false;
@@ -91,3 +92,18 @@ function resetBoard() {
  * responds to a click event and then runs the flipCard function
  */
 allCards.forEach(card => card.addEventListener('click', flipCard));
+
+// restart game event listener and restartGame button function to call restarGame function
+
+restartBtn.addEventListener('click', restartBtn);  // event listener for click of restart button
+restartBtn.onclick = function() {   // function to reset and restart game 
+    restartGame(); // calls the restartGame function
+};
+
+/**
+ * resets and restarts the game
+ */
+
+function restartGame() {
+  
+}
