@@ -1,11 +1,27 @@
 const allCards = document.querySelectorAll('.game-card');
 const cardsCells = document.querySelectorAll('.cell-card');
 const cardsFunctions = document.querySelectorAll('.function-card');
+// const movesElement = document.querySelector('move-counter');
 const restartBtn = document.getElementById('restartBtn');
 
 let hasFlippedCard = false;
 let lockMoves = false;
 let firstCard, secondCard;
+// let moves = 0;
+
+// /**
+//  * functions for the move counter - adding to and reseting the number
+//  */
+// function moveCounter() {  
+//   moves++;  // adds 1 move to the counter
+//   movesElement.innerHTML = moves;  // displays the increading move number in the html 'move-counter' span 
+// }
+
+// function resetCounter() {  
+//   moves = 0;  // resets the move counter to 0
+//   movesElement.innerHTML = moves;  // displays the reset counter as '0' in the html
+
+// }
 
 /**
  * flips and stores the first and second clicked cards 
@@ -25,6 +41,8 @@ function flipCard() {
   }
     // second card click
     secondCard = this;
+    
+    // moveCounter();
 
     checkForMatch();
 }
