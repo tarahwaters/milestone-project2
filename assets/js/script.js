@@ -19,11 +19,6 @@ function moveCounter() {
   movesElement.innerHTML = moves;  // displays the increasing move number in the html 'move-counter' span 
 }
 
-function resetCounter() {  
-  moves = 0;  // resets the move counter to 0
-  movesElement.innerHTML = moves;  // displays the reset counter as '0' in the html
-}
-
 /**
  * declarations and functions for the updating the timer during gameplay (triggered after first card click)
  * coding support: https://www.w3schools.com/js/js_timing.asp and https://codepen.io/FoxyStoat/pen/erzLMG 
