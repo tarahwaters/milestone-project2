@@ -30,7 +30,7 @@ function resetCounter() {
  */
 let time;
 let minutes = 0;
-let seconds = 0;
+let seconds = 00;
 let startTimer = false;
 
 function timer() {
@@ -43,7 +43,7 @@ function timer() {
       }
 
   // while active, adds the time taken to play the game in html
-  timerElement.innerHTML = "<i class='fa-regular fa-hourglass-clock'></i>" + "Time:" + minutes + "mins" + seconds + "secs";
+  timerElement.innerHTML = "<i class='fa-regular fa-hourglass-clock'></i>" + "Time: " + minutes + " : " + seconds;
   }, 1000);
 }
 
