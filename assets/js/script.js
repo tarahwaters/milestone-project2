@@ -2,7 +2,7 @@ const allCards = document.querySelectorAll('.game-card');
 const cardsCells = document.querySelectorAll('.cell-card');
 const cardsFunctions = document.querySelectorAll('.function-card');
 const movesElement = document.querySelector('#move-counter');
-const timeElement = document.querySelector('#timer');
+const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 
 let hasFlippedCard = false;
@@ -21,8 +21,18 @@ function moveCounter() {
 function resetCounter() {  
   moves = 0;  // resets the move counter to 0
   movesElement.innerHTML = moves;  // displays the reset counter as '0' in the html
-
 }
+
+/**
+ * declarations and functions for the game timer
+ */
+
+let time;
+let minutes = 0;
+let seconds = 00;
+let startTimer = false;
+timerElement.innerHTML = "Time" + minutes + ":" + seconds;
+
 
 /**
  * flips and stores the first and second clicked cards 
