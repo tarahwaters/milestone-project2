@@ -30,7 +30,7 @@ function resetCounter() {
  */
 let time;
 let minutes = 0;
-let seconds = 00;
+let seconds = 0;
 let startTimer = false;
 
 function timer() {
