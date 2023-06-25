@@ -24,15 +24,27 @@ function resetCounter() {
 }
 
 /**
- * declarations and functions for the game timer
+ * declarations and functions for the updating the timer during gameplay (triggered after first card click)
+ * coding support: https://www.w3schools.com/js/js_timing.asp and https://codepen.io/FoxyStoat/pen/erzLMG 
  */
-
 let time;
 let minutes = 0;
 let seconds = 00;
 let startTimer = false;
-timerElement.innerHTML = "Time" + minutes + ":" + seconds;
 
+function timer() {
+  //sets the time interval to update for each 1 second
+  time = setInterval(function() {
+    seconds++;
+      if (seconds === 60) {
+        minutes++;
+        seconds = 0;
+      }
+
+  // while active, adds the time taken to play the game in html
+  timerElement.innerHTML = "<i class="fa-regular fa-hourglass-clock"></i>" + "Time" + minutes + "mins" ":" + seconds + "secs";
+  }, 1000);
+}
 
 /**
  * flips and stores the first and second clicked cards 
