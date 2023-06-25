@@ -92,19 +92,16 @@ function resetBoard() {
  * shuffle each set of cards based on its type: either cell image / function
  * within the separate game card containers
  */
- (function shuffle() {
-   cardsCells.forEach(card => {
-     let randomPos = Math.floor(Math.random() * 8);
-     card.style.order = randomPos;
-   });
- })();
 
-(function shuffle() {
-   cardsFunctions.forEach(card => {
-     let randomPos = Math.floor(Math.random() * 8);
-     card.style.order = randomPos;
-   });
- })();
+function shuffle(cards) {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 8);
+    card.style.order = randomPos;
+  });
+}
+
+shuffle(cardsCells);
+shuffle(cardsFunctions);
 
 /**
  * responds to a click event and then runs the flipCard function
@@ -113,7 +110,6 @@ allCards.forEach(card => card.addEventListener('click', flipCard));
 
 // restart game event listener and restartGame button function to call restarGame function
 
-restartBtn.addEventListener('click', restartBtn);  // event listener for click of restart button
 restartBtn.onclick = function() {   // function to reset and restart game 
     restartGame(); // calls the restartGame function
 };
@@ -123,5 +119,5 @@ restartBtn.onclick = function() {   // function to reset and restart game
  */
 
 function restartGame() {
-  
+  location.reload()
 }
