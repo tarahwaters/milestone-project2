@@ -5,6 +5,7 @@ const movesElement = document.querySelector('#move-counter');
 const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 
+let gameStart = false;
 let hasFlippedCard = false;
 let lockMoves = false;
 let firstCard, secondCard;
@@ -51,6 +52,10 @@ function timer() {
  * before checking if they are a match
  */
 function flipCard() {
+  if (!gameStart) {
+    gameStart = true;
+    timer();
+  }
   if (lockMoves) return;
   if (this === firstCard) return;
 
