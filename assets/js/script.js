@@ -1,7 +1,7 @@
 const allCards = document.querySelectorAll('.game-card');
 const cardsCells = document.querySelectorAll('.cell-card');
 const cardsFunctions = document.querySelectorAll('.function-card');
-const movesElement = document.querySelector('move-counter');
+const movesElement = document.querySelector('#move-counter');
 const restartBtn = document.getElementById('restartBtn');
 
 let hasFlippedCard = false;
