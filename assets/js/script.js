@@ -8,7 +8,7 @@ const cardsFunctions = document.querySelectorAll('.function-card');
 const movesElement = document.querySelector('#move-counter');
 const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
-const completePairs = 9;
+const completePairs = 8;
 
 let gameStart = false;
 let hasFlippedCard = false;
