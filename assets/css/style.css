@@ -20,11 +20,27 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h2, h3 {
     font-family: 'Kalam', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
+}
+
+/*--modal styling--*/
+
+.modal-content {
+    border: 5px solid #2176FF;
+}
+
+.modal-header, .modal-body, .modal-footer, .modal-image {
+    background-color: #fbefbf;
+    border: none;
+    text-align: center;
+}
+
+.modal-header {
+    display: inline !important;
 }
 
 /*--game timer and move counter--*/
