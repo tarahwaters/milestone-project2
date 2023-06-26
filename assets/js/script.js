@@ -157,11 +157,15 @@ shuffle(cardsFunctions);
  */
 allCards.forEach(card => card.addEventListener('click', flipCard));
 
-// restart game event listener and restartGame button function
+// game button event listeners and their functions
 
 restartBtn.onclick = function() {   // function to reset and restart game 
     restartGame(); // calls the restartGame function
 };
+
+helpModalBtn.onClick = function() { // function to open the howtoplay help modal
+    switchOn("#helpModal"); // calls the switchOn function that 'shows' the helpModal
+}
 
 /**
  * resets and restarts the game by reloading the page
