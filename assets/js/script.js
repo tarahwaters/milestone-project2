@@ -8,12 +8,14 @@ const cardsFunctions = document.querySelectorAll('.function-card');
 const movesElement = document.querySelector('#move-counter');
 const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
+const completePairs = 9;
 
 let gameStart = false;
 let hasFlippedCard = false;
 let lockMoves = false;
 let firstCard, secondCard;
 let moves = 0;
+let matchedPairs = 0;
 
 /**
  * functions for the move counter - adding to and reseting the number
