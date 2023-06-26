@@ -6,6 +6,7 @@
     <title>Specialised Cells - GCSE Biology Revision Game</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/873dfac5f5.js" crossorigin="anonymous"></script>
     <!-- favicon -->
@@ -108,13 +109,13 @@
             </div>
             <div id="button-container">
                 <button type="button" id="restartBtn" class="game-btn" onclick="restartGame()">Restart</button> 
-                <button type="button" id="helpModalBtn" class="game-btn" data-toggle="modal" data-target="#helpModal" onclick="switchOn()">How to Play</button>
+                <button type="button" id="helpModalBtn" class="game-btn" data-bs-toggle="modal" data-bs-target="#helpModal" onclick="switchOn()">How to Play</button>
             </div>
         </section>
 
             <!-- HowToPlay modal - code adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/-->
         <section>
-            <div class="modal fade show" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true" style="display:block;">
+            <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
