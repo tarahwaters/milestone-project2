@@ -169,3 +169,11 @@ restartBtn.onclick = function() {   // function to reset and restart game
 function restartGame() {
   location.reload()
 }
+
+/**
+ * switches on the modal when activated
+ * code support: https://getbootstrap.com/docs/4.0/components/modal/
+ */
+function switchOn(myModalId) {
+  $(myModalId).modal('show');
+}
