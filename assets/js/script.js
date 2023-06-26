@@ -50,6 +50,10 @@ function timer() {
   }, 1000);
 }
 
+ function stopTimer() {
+     clearInterval(time);
+ }
+
 /**
  * flips and stores the first and second clicked cards 
  * before checking if they are a match
@@ -81,8 +85,11 @@ function flipCard() {
  */
 function checkForMatch() {
   let cardMatch = firstCard.dataset.match === secondCard.dataset.match;
+  if (cardMatch) matchedPairs += 1;
 
   cardMatch ? disableCards() : unflipCards();
+
+  if (matchedPairs === completePairs) winGame();
 }
 
 /**
@@ -119,6 +126,14 @@ function unflipCards() {
 function resetBoard() {
   [hasFlippedCard, lockMoves] = [false, false];
   [firstCard, secondCard] = [null, null];
+}
+
+/**
+ * ends game once all cards have been matched 
+ */
+
+function winGame() {
+  stopTimer();
 }
 
 /**
