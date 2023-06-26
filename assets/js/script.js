@@ -1,3 +1,7 @@
+/**
+ * coding support for main functioning of the game and flip features (adapted for use): https://marina-ferreira.github.io/tutorials/js/memory-game/
+ */
+
 const allCards = document.querySelectorAll('.game-card');
 const cardsCells = document.querySelectorAll('.cell-card');
 const cardsFunctions = document.querySelectorAll('.function-card');
@@ -13,6 +17,7 @@ let moves = 0;
 
 /**
  * functions for the move counter - adding to and reseting the number
+ * coding support: https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1 
  */
 function moveCounter() {  
   moves++;  // adds 1 move to the counter
@@ -21,7 +26,8 @@ function moveCounter() {
 
 /**
  * declarations and functions for the updating the timer during gameplay (triggered after first card click)
- * coding support: https://www.w3schools.com/js/js_timing.asp and https://codepen.io/FoxyStoat/pen/erzLMG 
+ * coding support: https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/, 
+ * https://www.w3schools.com/js/js_timing.asp and https://codepen.io/FoxyStoat/pen/erzLMG 
  */
 let time;
 let minutes = 0;
@@ -57,12 +63,12 @@ function flipCard() {
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
-    // first card click
+    // first card is clicked
     hasFlippedCard = true;
     firstCard = this;
     return;
   }
-    // second card click
+    // second card is clicked
     secondCard = this;
 
     checkForMatch();
@@ -106,7 +112,7 @@ function unflipCards() {
 }
 
 /**
- * reset the flipped card pairs after each round 
+ * resets the flipped card pairs after each round 
  */
 function resetBoard() {
   [hasFlippedCard, lockMoves] = [false, false];
@@ -114,7 +120,7 @@ function resetBoard() {
 }
 
 /**
- * shuffle each set of cards based on its type: either cell image / function
+ * shuffles each set of cards based on its type: either cell image / function
  * within the separate game card containers
  */
 
@@ -133,14 +139,14 @@ shuffle(cardsFunctions);
  */
 allCards.forEach(card => card.addEventListener('click', flipCard));
 
-// restart game event listener and restartGame button function to call restarGame function
+// restart game event listener and restartGame button function
 
 restartBtn.onclick = function() {   // function to reset and restart game 
     restartGame(); // calls the restartGame function
 };
 
 /**
- * resets and restarts the game
+ * resets and restarts the game by reloading the page
  */
 
 function restartGame() {
