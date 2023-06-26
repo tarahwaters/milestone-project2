@@ -47,6 +47,10 @@ h2, h3 {
     width: 25%;
 }
 
+.table>:not(caption)>*>* {
+    background-color: inherit;
+}
+
 /*--game timer and move counter--*/
 
 #game-feedback {
