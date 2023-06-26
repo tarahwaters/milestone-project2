@@ -43,6 +43,10 @@ h2, h3 {
     display: inline !important;
 }
 
+.modal img {
+    width: 25%;
+}
+
 /*--game timer and move counter--*/
 
 #game-feedback {
