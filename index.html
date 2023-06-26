@@ -107,18 +107,18 @@
                 </div>
             </div>
             <div id="button-container">
-                <button id="restartBtn" class="game-btn" onclick="restartGame()">Restart</button> 
-                <button id="modalBtn" class="game-btn">How to Play</button>
+                <button type="button" id="restartBtn" class="game-btn" onclick="restartGame()">Restart</button> 
+                <button type="button" id="helpModalBtn" class="game-btn" data-toggle="modal" data-target="#helpModal">How to Play</button>
             </div>
         </section>
 
-            <!-- HowToPlay modal pop up -->
+            <!-- HowToPlay modal - code adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/-->
         <section>
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade show" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true" style="display:block;">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title" id="helpModalTitle">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
