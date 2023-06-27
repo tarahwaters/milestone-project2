@@ -135,6 +135,7 @@ function resetBoard() {
 
 function winGame() {
   stopTimer();
+  switchOn("#winModal");
 }
 
 /**
