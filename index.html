@@ -119,80 +119,94 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h3 class="modal-title" id="helpModalTitle">How To Play</h3>
+                            <h3 class="modal-title" id="helpModalTitle">How To Play</h3>
                         </div>
                         <div class="modal-body">
-                        <p>This is a matching pairs game to help you learn and revise <strong>Specialised Cells and their Functions</strong> (a GCSE Biology Topic).</p>
-                        <p>Match the <strong>'Cell Type'</strong> images with their <strong>'Function'</strong> descriptions.</p>
-                        <p>
-                            <img src="assets/images/cards/backface-cell.webp" alt="Cell Type card image">
-                            <img src="assets/images/cards/backface-function.webp" atl="Function card description">
-                        </p>
-                        <p>You can read about the different cell types here before you play!</p>
-                            <div>
-                                <table class="table">
-                                      <thead>
-                                      <tr>
-                                        <th scope="col">Cell Type</th>
-                                        <th scope="col">Function</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
+                            <p>This is a matching pairs game to help you learn and revise <strong>Specialised Cells and their Functions</strong> (a GCSE Biology Topic).</p>
+                            <p>Match the <strong>'Cell Type'</strong> images with their <strong>'Function'</strong> descriptions.</p>
+                            <p>
+                                <img src="assets/images/cards/backface-cell.webp" alt="Cell Type card image">
+                                <img src="assets/images/cards/backface-function.webp" atl="Function card description">
+                            </p>
+                            <p>You can read about the different cell types here before you play!</p>
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Cell Type</th>
+                                    <th scope="col">Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
                                         <th scope="row"><img src="assets/images/instructions/cilia-cell.webp">
                                             <br>Ciliated Epithelial Cell</th>
                                         <td>This cell uses tiny hairs to trap bacteria and dust in air passages.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <th scope="row"><img src="assets/images/instructions/egg-cell.webp">
                                         <br>Egg Cell</th>
                                         <td>This cell fertilises with a sperm then develops into an embryo.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <th scope="row"><img src="assets/images/instructions/muscle-cell.webp">
                                         <br>Muscle Cell</th>
                                         <td>This cell shortens and lengthens, allowing animals to move.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <th scope="row"><img src="assets/images/instructions/nerve-cell.webp">
                                         <br>Nerve Cell</th>
                                         <td>This cell carries electrical signals to the brain and body.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                    <tr>
                                         <th scope="row"><img src="assets/images/instructions/palisade-cell.webp">
                                         <br>Palisade Cell</th>
                                         <td>This cell helps plants do photosynthesis to make food from sunlight</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                        <tr>
                                         <th scope="row"><img src="assets/images/instructions/red-blood-cell.webp">
                                         <br>Red Blood Cell</th>
                                         <td>This cell transports oxygen around the body.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                        <tr>
                                         <th scope="row"><img src="assets/images/instructions/root-hair-cell.webp">
                                         <br>Root Hair Cell</th>
                                         <td>This plant cell absorbs water and minerals from soil.</td>
-                                      </tr>
-                                      <tr>
+                                    </tr>
+                                        <tr>
                                         <th scope="row"><img src="assets/images/instructions/sperm-cell.webp">
                                         <br>Sperm Cell</th>
                                         <td>This cell fertilises an egg cell.</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                    </tr>
+                                </tbody>
+                            </table>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="restartGame()">New Game</button>
+                            <button type="button" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="restartGame()">New Game</button>
                         </div>
                     </div>
                 </div>
             </div>
             </section>
             <!-- WinMessage modal pop up -->
-            <div class="modal" id="#">
-
-            </div>    
+            <section>
+                <div class="modal fade show" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModalTitle" aria-hidden="true" style="display:block;">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="winModalTitle">Well Done!</h3>
+                            </div>
+                            <div class="modal-body">
+                                                                
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="restartGame()">Play Again!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>   
         
     </main>
 
