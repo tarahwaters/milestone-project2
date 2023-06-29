@@ -15,7 +15,7 @@ body {
 h1 {
     font-family: 'Kalam', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.rem;
     padding: 2rem 0 0 0;
     text-align: center;
 }
@@ -23,51 +23,24 @@ h1 {
 h2, h3 {
     font-family: 'Kalam', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-}
-
-/*--modal styling--*/
-
-#winner-gif {
-    width: 100%;
-}
-
-.modal-content {
-    border: 5px solid #2176FF;
-}
-
-.modal-header, .modal-body, .modal-footer, .modal-image {
-    background-color: #fbefbf;
-    border: none;
-    text-align: center;
-}
-
-.modal-header {
-    display: inline !important;
-}
-
-.modal img {
-    width: 25%;
-}
-
-.table>:not(caption)>*>* {
-    background-color: inherit;
 }
 
 /*--game timer and move counter--*/
 
 #game-feedback {
-    width: 620px;
+    width: 550px;
     margin: auto;
     padding: 1rem;
+    font-size: 0.9rem;
 }
 
 /*--game cards--*/
 
 #cell-card-container, #descriptive-card-container {
-    width: 600px;
-    height: 320px;
+    width: 560px;
+    height: 280px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -141,10 +114,40 @@ h2, h3 {
     border-radius: 10px;
 }
 
+/*--modal styling--*/
+
+#winner-gif {
+    width: 100%;
+}
+
+.modal-content {
+    border: 5px solid #2176FF;
+}
+
+.modal-header, .modal-body, .modal-footer, .modal-image {
+    background-color: #fbefbf;
+    border: none;
+    text-align: center;
+}
+
+.modal-header {
+    display: inline !important;
+}
+
+.modal img {
+    width: 25%;
+}
+
+/*--override bootstrap styling for modal--*/
+.table>:not(caption)>*>* {
+    background-color: inherit;
+}
+
 /*--footer--*/
 
 #footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.7rem;
 }
