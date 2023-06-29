@@ -47,7 +47,7 @@ function timer() {
       }
 
   // while active, adds the time taken to play the game in html
-  timerElement.innerHTML = "<i class='fa-regular fa-hourglass-clock'></i>" + "Time: " + minutes + " : " + seconds;
+  timerElement.innerHTML = "Time: " + minutes + " : " + seconds;
   }, 1000);
 }
 
