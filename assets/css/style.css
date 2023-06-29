@@ -114,6 +114,15 @@ h2, h3 {
     border-radius: 10px;
 }
 
+/*--override bootstrap styling for button pseudoclasses--*/
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+  background-color: #B65B81 !important;
+  border-color: #B65B81 !important;
+}
+
 /*--modal styling--*/
 
 #winner-gif {
