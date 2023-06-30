@@ -161,7 +161,7 @@ These were the initial wireframes created for the project during the planning st
 
 - **Kalam** - for the main title
 - **Preahvihear** - for subtitles and headings
-- **Sriracha** - for descriptive text
+- **Sriracha** - for descriptive text (*in the end this font was not utilised)
 - with a backup font of **"Sans serif"**
 
 ![Font pairings](/documentation/readme/typography.jpg "Font pairings")
