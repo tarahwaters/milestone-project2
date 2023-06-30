@@ -87,14 +87,15 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 | Opportunity                                                      | Importance | Viability / Feasibility | Outcome |
 | ---------------------------------------------------------------- | :--------: | :---------------------: | :------:|
-| Card-matching memory game that works by user clicking cards      |     5      |            5            |         |
-| Timer and move counter that provide up-to-date feedback to user  |     5      |            5            |         |
-| HowToPlay modal with set of instructions (with clickable button) |     5      |            5            |         |
-| WinMessage modal that pops up when user has completed the game   |     5      |            5            |         |
-| Option to restart (with button on main page, also via Win modal) |     5      |            5            |         |
-| Increase in challenge (adding more complex set of cards to match)|     4      |            4            |         |
-| Access to summary notes page for revision / download afer game   |     3      |            4            |         |
-| Option to adjust audio settings [X]                              |     3      |            2            |         |
+| Card-matching memory game that works by user clicking cards      |     5      |            5            |    Y    |
+| Timer and move counter that provide up-to-date feedback to user  |     5      |            5            |    Y    |
+| HowToPlay modal with set of instructions (with clickable button) |     5      |            5            |    Y    |
+| WinMessage modal that pops up when user has completed the game   |     5      |            5            |    Y    |
+| Option to restart (with button on main page, also via Win modal) |     5      |            5            |    Y    |
+| Access to summary notes page for revision / download afer game   |     3      |            4            |    Y    |
+| Option of advanced level / challenge                             |     3      |            2            |    N    |
+| Option to adjust audio settings [X]                              |     3      |            2            |    X    |
+
 
 
 
