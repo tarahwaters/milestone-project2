@@ -172,10 +172,20 @@ Since the images of specialised cells available online were consistent or visual
 
 ![Specialised Cells Full Image](/documentation/readme/specialised-cells-full.png "Full image containing all Specialised Cells used on the game cards")
 
+The images were resized to 500 x 500px to form the game cards, and a background and name label were added to each using [Canva](https://www.canva.com/) to edit.
+
+The images were then converted to WEBP format to reduce their file size to improve website load times (using [RedKetchup](https://redketchup.io/)).
+
+Example card design:
+
+![Example Card Design](assets/images/cards/palisade-cell.webp "Example Card Design")
+
 ### Extra Learning Resource
 
 As a prize for completing the game, users have access to a downloadable learning resource which summarises all the cell types used in the game.
 Learners can print off the flashcards and use them for their biology revision.
+
+Example images of a free learning resource available to download:
 
 ![Specialised Cells Flashcards Page 1](/documentation/readme/specialised-cells-flashcards-page1.png "Specialised Cells Flashcards Page 1")
 ![Specialised Cells Flashcards Page 2](/documentation/readme/specialised-cells-flashcards-page2.png "Specialised Cells Flashcards Page 2")
