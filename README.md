@@ -6,9 +6,12 @@
 
 ------
 
-This *GCSE Biology Revision Game* is a card-matching game that helps students to memorise **specialised cell types and their functions**. A specialised cell is any cell that has developed features to perform a specific job - e.g. a *red blood cell* has developed certain features to perform *its function of carrying oxygen around the body*. Once a cell has become specialised, its job is fixed. The specialised cell types chosen are from **the Biology curriculum at GCSE level**.
+This *GCSE Biology Revision Game* is a card-matching game that helps students to memorise **specialised cell types and their functions**. 
 
- The objective of the game is to **find the matching pairs of cards** - a labeled image of the cell type with a description of its function. There is the **added challenge of completing the game within a set timeframe**, and the user has the option of **increasing the level of difficulty** by either matching the cell type image with the location and function (standard level) or matching the cell type image with the adapted features (advanced level). This game should hopefully be accessible enough and fun for anyone to play as a **quick-thinking memory style game**, but also can be used as a **revision tool** to help remember different cell types and their functions. 
+A specialised cell is any cell that has developed features to perform a specific job - e.g. a *red blood cell* has developed certain features to perform *its function of carrying oxygen around the body*. The specialised cell types chosen are from **the Biology curriculum at GCSE level**.
+
+ The objective of the game is to **find the matching pairs of cards** - a labeled image of the cell type with a description of its function. 
+ This game should hopefully be accessible enough and fun for anyone to play as a **quick-thinking memory style game**, but also can be used as a **revision tool** to help remember different cell types and their functions. 
 
 ## Showcase
 
