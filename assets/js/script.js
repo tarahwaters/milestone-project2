@@ -182,7 +182,7 @@ function switchOn(myModalId) {
   completedTime = timerElement.innerHTML;
      // adds the completed moves and time to the winner message
      document.getElementById("totalMoves").innerHTML = moves;
-     document.getElementById("totalTime").innerHTML = finalTime;
+     document.getElementById("totalTime").innerHTML = completedTime;
 }
 
 /**
