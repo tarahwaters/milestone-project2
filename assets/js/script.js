@@ -179,3 +179,12 @@ function restartGame() {
 function switchOn(myModalId) {
   $(myModalId).modal('show');
 }
+
+/**
+ * when the help modal is closed by clicking off the screen instead of the button, 
+ * boostrap's modal class fires an event to restart the timer
+ * code support: https://getbootstrap.com/docs/4.6/components/modal/
+ */
+$('#helpModal').on('hidden.bs.modal', function (event) {
+  timer();
+})
