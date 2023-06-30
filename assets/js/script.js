@@ -17,6 +17,7 @@ let lockMoves = false;
 let firstCard, secondCard;
 let moves = 0;
 let matchedPairs = 0;
+let completedTime = "";
 
 /**
  * functions for the move counter - adding to and reseting the number
@@ -173,11 +174,15 @@ function restartGame() {
 }
 
 /**
- * switches on the modal when activated
+ * switches on the modal when activated and adds final time and move score
  * code support: https://getbootstrap.com/docs/4.0/components/modal/
  */
 function switchOn(myModalId) {
   $(myModalId).modal('show');
+  completedTime = timerElement.innerHTML;
+     // adds the completed moves and time to the winner message
+     document.getElementById("totalMoves").innerHTML = moves;
+     document.getElementById("totalTime").innerHTML = finalTime;
 }
 
 /**
