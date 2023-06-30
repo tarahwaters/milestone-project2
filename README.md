@@ -19,7 +19,7 @@ A specialised cell is any cell that has developed features to perform a specific
 
 The **Am I Responsive?** link can be found here - [Am I Responsive?](#)
 
-A **deployed link** to the live website can be found here [Specialised Cells Game](#)
+A **deployed link** to the live website can be found here [Specialised Cells Game](https://tarahwaters.github.io/milestone-project2/)
 
 ---
 
