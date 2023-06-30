@@ -142,6 +142,10 @@ p {
     text-align: center;
 }
 
+.modal-body {
+    padding: 0 1rem;
+}
+
 .modal img {
     width: 25%;
 }
