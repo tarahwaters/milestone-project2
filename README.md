@@ -180,6 +180,15 @@ Example card design:
 
 ![Example Card Design](assets/images/cards/palisade-cell.webp "Example Card Design")
 
+Card backfaces were designed differently to indicate which type of card they are - i.e. cell type (an image) or function (a description).
+This was done to improve the user experience and became part of the game development to also separate the shuffling of the cards.
+
+Example backface card designs:
+
+![Example Backface Card Designs](documentation/readme/backface-designs.png "Example Backface Card Designs")
+
+
+
 ### Extra Learning Resource
 
 As a prize for completing the game, users have access to a downloadable learning resource which summarises all the cell types used in the game.
