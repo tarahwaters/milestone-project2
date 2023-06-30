@@ -191,5 +191,7 @@ function switchOn(myModalId) {
  * code support: https://getbootstrap.com/docs/4.6/components/modal/
  */
 $('#helpModal').on('hidden.bs.modal', function (event) {
-  timer();
+    if (firstCard) {
+      timer();
+    }
 })
