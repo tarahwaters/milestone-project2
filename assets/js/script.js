@@ -195,3 +195,13 @@ $('#helpModal').on('hidden.bs.modal', function (event) {
       timer();
     }
 })
+
+/**
+ * when the help modal is closed by clicking the close button, 
+ * the timer will only resume if game has already started
+ */
+function resumeTimerOnModalClose() {
+    if (gameStart) {
+      timer();
+    }
+}
