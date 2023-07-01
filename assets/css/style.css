@@ -226,7 +226,7 @@ p {
     }
 
     #game-feedback {
-        width: 100%;
+        width: 80%;
         padding: 0.5rem 0;
         font-size: 1rem;
     }
@@ -249,7 +249,6 @@ p {
      }
  
      #game-feedback {
-         width: 80%;
          padding: 0.5rem 0;
          font-size: 1rem;
      }
