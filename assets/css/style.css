@@ -282,7 +282,7 @@ p {
  @media only screen and (min-width: 700px) {
 
     #cell-card-container, #descriptive-card-container {
-        width: 80vw;
+        width: 70vw;
         height: 33vh;
     }
 
