@@ -171,11 +171,12 @@ p {
 @media only screen and (max-width: 400px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        padding: 0.7rem 0 0 0;
     }
 
-    h2 h3 {
-        font-size: 1.5rem;
+    h2, h3 {
+        font-size: 1.3rem;
     }
 
      p {
@@ -189,23 +190,27 @@ p {
     
    #cell-card-container, #descriptive-card-container {
         width: 95vw;
-        height: 25vh;
+        height: 30vh;
     }
 
     #game-feedback {
-        width: 80%;
+        width: 90%;
         margin: auto;
-        padding: 0.5rem 0;
-        font-size: 0.7rem;
+        padding: 0.2rem 0;
+        font-size: 0.6rem;
     }
 
     .front-face-function {
-        font-size: 0.5rem;
-        padding: 0.8rem 0.3rem;
+        font-size: 0.4rem;
+        padding: 0.5rem 0.3rem;
     }
 
     .game-btn {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+       #footer {
+        font-size: 0.6rem;
     }
 
 }
