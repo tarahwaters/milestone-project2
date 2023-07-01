@@ -188,8 +188,8 @@ p {
     }
     
    #cell-card-container, #descriptive-card-container {
-        width: 100vw;
-        height: 30vh;
+        width: 90vw;
+        height: 20vh;
     }
 
     #game-feedback {
@@ -200,7 +200,7 @@ p {
     }
 
     .front-face-function {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
         padding: 0.8rem 0.2rem;
     }
 
