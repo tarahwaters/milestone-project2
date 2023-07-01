@@ -298,6 +298,10 @@ p {
         height: 33vh;
     }
 
+    #game-feedback {
+        width: 55%;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
