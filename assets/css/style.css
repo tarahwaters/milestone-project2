@@ -168,22 +168,44 @@ p {
 
 /*--media queries--*/
 
-/*--extra small screens--*/
-@media only screen and (max-width: 576px) {
-   
-}
+@media only screen and (max-width: 400px) {
 
-/*--small screens--*/
-@media only screen and (min-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-}
+    h2 h3 {
+        font-size: 1.5rem;
+    }
 
-/*--medium tablet screens--*/
-@media only screen and (min-width: 768px) {
+     p {
+        font-size: 0.8rem;
+         margin: 0.5rem 0;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
     
-}
+   #cell-card-container, #descriptive-card-container {
+        width: 100vw;
+        height: 30vh;
+    }
 
-/*--extra large screens--*/
-@media (min-width: 1200px) {
-    
+    #game-feedback {
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+    }
+
+    .front-face-function {
+        font-size: 0.55rem;
+        padding: 0.8rem 0.2rem;
+    }
+
+    .game-btn {
+        font-size: 0.8rem;
+    }
+
 }
