@@ -34,7 +34,7 @@ p {
 /*--game timer and move counter--*/
 
 #game-feedback {
-    width: 550px;
+    width: 30%;
     margin: auto;
     padding: 1rem;
     font-size: 0.9rem;
