@@ -188,8 +188,8 @@ p {
     }
     
    #cell-card-container, #descriptive-card-container {
-        width: 90vw;
-        height: 20vh;
+        width: 95vw;
+        height: 25vh;
     }
 
     #game-feedback {
@@ -200,8 +200,8 @@ p {
     }
 
     .front-face-function {
-        font-size: 0.55rem;
-        padding: 0.8rem 0.2rem;
+        font-size: 0.5rem;
+        padding: 0.8rem 0.3rem;
     }
 
     .game-btn {
@@ -221,8 +221,8 @@ p {
     }
     
    #cell-card-container, #descriptive-card-container {
-        width: 90vw;
-        height: 20vh;
+        width: 95vw;
+        height: 25vh;
     }
 
     #game-feedback {
@@ -233,7 +233,7 @@ p {
 
     .front-face-function {
         font-size: 0.5rem;
-        padding: 1rem 0.2rem;
+        padding: 1rem 0.3rem;
     }
 
     .game-btn {
