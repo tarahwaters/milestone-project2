@@ -325,10 +325,10 @@ p {
     
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (max-width: 1700px) {
 
     #cell-card-container, #descriptive-card-container {
-        width: 33vw;
+        width: 40vw;
         height: 33vh;
     }
 
