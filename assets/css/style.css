@@ -264,11 +264,11 @@ p {
      
      #cell-card-container, #descriptive-card-container {
          width: 90vw;
-         height: 40vh;
+         height: 30vh;
      }
  
      #game-feedback {
-         width: 75%;
+         width: 70%;
          padding: 1rem 0;
          font-size: 1rem;
      }
