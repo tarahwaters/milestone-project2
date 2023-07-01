@@ -43,8 +43,8 @@ p {
 /*--game cards--*/
 
 #cell-card-container, #descriptive-card-container {
-    width: 560px;
-    height: 280px;
+    width: 33vw;
+    height:33vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
