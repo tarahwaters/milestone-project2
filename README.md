@@ -15,9 +15,9 @@ A specialised cell is any cell that has developed features to perform a specific
 
 ## Showcase
 
-![Am I Responsive?](/assets/documentation "Am I Responsive? Website Mockup")
+![Am I Responsive?](documentation/readme/am-i-responsive.webp "Am I Responsive? Website Mockup")
 
-The **Am I Responsive?** link can be found here - [Am I Responsive?](#)
+The **Am I Responsive?** link can be found here - [Am I Responsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/)
 
 A **deployed link** to the live website can be found here [Specialised Cells Game](https://tarahwaters.github.io/milestone-project2/)
 
