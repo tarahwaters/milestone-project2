@@ -199,6 +199,51 @@ Example images of a free learning resource available to download:
 ![Specialised Cells Flashcards Page 1](/documentation/readme/specialised-cells-flashcards-page1.png "Specialised Cells Flashcards Page 1")
 ![Specialised Cells Flashcards Page 2](/documentation/readme/specialised-cells-flashcards-page2.png "Specialised Cells Flashcards Page 2")
 
+## Technologies Used:
+
+- **HTML5**
+- **CSS**
+- **Bootstrap**
+- **JavaScript**
+
+## Testing:
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+## Deployment:
+
+The site was deployed to GitHub Pages. The steps to deploy are as follows:
+- In the [GitHub repository](https://github.com/tarahwaters/milestone-project2), navigate to the Settings tab.
+- In the general settings side menu, open **Pages**.
+- From the source section drop-down menu, select **Deploy from a branch** and then **Main** Branch, and click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment and link to visit the site.
+
+The live link can be found [here](https://tarahwaters.github.io/milestone-project2)
+
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/tarahwaters/milestone-project2) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/tarahwaters/milestone-project2.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tarahwaters/milestone-project2)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
 ## References
 
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
