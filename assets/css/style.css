@@ -298,12 +298,16 @@ p {
 @media only screen and (min-width: 900px) {
 
     #cell-card-container, #descriptive-card-container {
-        width: 60vw;
+        width: 50vw;
         height: 33vh;
     }
 
     #game-feedback {
         width: 45%;
+    }
+
+    .front-face-function {
+        font-size: 0.7rem;
     }
 
 }
