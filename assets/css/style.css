@@ -108,7 +108,7 @@ p {
 .game-btn {
     text-decoration: none;
     color: #2176FF;
-    border: 1px solid ;
+    border: 0.1rem solid ;
     background-color: #FFE787;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
