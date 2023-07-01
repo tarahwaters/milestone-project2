@@ -325,7 +325,7 @@ p {
     
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (min-width: 1500px) {
 
     #cell-card-container, #descriptive-card-container {
         width: 40vw;
@@ -334,6 +334,15 @@ p {
 
      #game-feedback {
         width: 25%;
+    }
+    
+}
+
+@media only screen and (min-width: 1700px) {
+
+    #cell-card-container, #descriptive-card-container {
+        width: 33vw;
+        height: 33vh;
     }
     
 }
