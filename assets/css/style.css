@@ -110,11 +110,10 @@ p {
     color: #2176FF;
     border: 1px solid ;
     background-color: #FFE787;
-    margin: 10px;
-    padding: 10px 25px;
-    font-size: 14px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 /*--override bootstrap styling for button pseudoclasses--*/
