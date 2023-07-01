@@ -258,7 +258,7 @@ p {
          font-size: 0.8rem;
          padding: 0.8rem 0.2rem;
      }
-     
+
 }
  
  @media only screen and (min-width: 576px) {
@@ -279,3 +279,24 @@ p {
      }
 
  }
+
+ @media only screen and (min-width: 700px) {
+
+    #cell-card-container, #descriptive-card-container {
+        width: 70vw;
+        height: 35vh;
+    }
+
+     #game-feedback {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    #cell-card-container, #descriptive-card-container {
+        width: 60vw;
+        height: 33vh;
+    }
+
+}
