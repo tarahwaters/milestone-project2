@@ -240,3 +240,38 @@ p {
         font-size: 0.9rem;
     }
 }
+
+@media only screen and (min-width: 500px) {
+    
+    #cell-card-container, #descriptive-card-container {
+         width: 100vw;
+         height: 35vh;
+     }
+ 
+     #game-feedback {
+         width: 80%;
+         padding: 0.5rem 0;
+         font-size: 1rem;
+     }
+ 
+     .front-face-function {
+         font-size: 0.8rem;
+         padding: 0.8rem 0.2rem;
+     }
+ 
+ @media only screen and (min-width: 576px) {
+     
+     #cell-card-container, #descriptive-card-container {
+         width: 90vw;
+         height: 40vh;
+     }
+ 
+     #game-feedback {
+         width: 75%;
+         padding: 1rem 0;
+         font-size: 1rem;
+     }
+ 
+     .front-face-function {
+         padding: 1rem 0.2rem;
+     }
