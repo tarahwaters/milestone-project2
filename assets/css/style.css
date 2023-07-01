@@ -194,14 +194,14 @@ p {
     }
 
     #game-feedback {
-        width: 90%;
+        width: 95%;
         margin: auto;
         padding: 0.2rem 0;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .front-face-function {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         padding: 0.5rem 0.3rem;
     }
 
@@ -214,7 +214,6 @@ p {
     }
 
 }
-
 @media only screen and (min-width: 400px) {
     
     h1 {
