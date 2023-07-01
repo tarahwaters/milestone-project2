@@ -300,3 +300,29 @@ p {
     }
 
 }
+
+@media only screen and (min-width: 1200px) {
+
+    #cell-card-container, #descriptive-card-container {
+        width: 60vw;
+        height: 33vh;
+    }
+
+    #game-feedback {
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+
+    #cell-card-container, #descriptive-card-container {
+        width: 50vw;
+        height: 33vh;
+    }
+
+     #game-feedback {
+        width: 40%;
+    }
+    
+}
