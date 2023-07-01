@@ -132,7 +132,7 @@ p {
 }
 
 .modal-content {
-    border: 5px solid #2176FF;
+    border: 0.3rem solid #2176FF;
 }
 
 .modal-header, .modal-body, .modal-footer, .modal-image {
