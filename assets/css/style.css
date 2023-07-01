@@ -172,7 +172,7 @@ p {
 
     h1 {
         font-size: 2rem;
-        
+        padding: 0.8rem 0 0 0;
     }
 
     h2, h3 {
@@ -201,7 +201,7 @@ p {
     }
 
     .front-face-function {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         padding: 0.5rem 0.3rem;
     }
 
