@@ -209,3 +209,34 @@ p {
     }
 
 }
+
+@media only screen and (min-width: 400px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+   #cell-card-container, #descriptive-card-container {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #game-feedback {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .front-face-function {
+        font-size: 0.6rem;
+        padding: 1rem 0.2rem;
+    }
+
+    .game-btn {
+        font-size: 0.9rem;
+    }
+}
