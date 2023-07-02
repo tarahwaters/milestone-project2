@@ -2,10 +2,10 @@
 /* global $ */
 
 /**
- * @fileoverview contains the javascript needed to run the 'Specialised Cells - GCSE Biology Revision Game'
- * this is a memory matching card pair game which involves the user flipping cards to match
+ * @fileoverview contains the javascript needed to run the 'Specialised Cells - GCSE Biology Revision Game'.
+ * This is a memory matching card pair game which involves the user flipping cards to match
  * cell type images with their functional descriptions.
- * there are additional js game functions for the user to track their time and move score, reset the game,
+ * There are additional js game functions for the user to track their time and move score, reset the game,
  * and view instructions as well as a message upon game completion.
  */
 
@@ -20,7 +20,7 @@ const TIME_UPDATE_FREQUENCY_MSECS = 1000;
 const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
 
 /**
- * Coding support for main functioning of the game 
+ * Coding support for main functioning of the game
  * and flip features (adapted for use):
  * https://marina-ferreira.github.io/tutorials/js/memory-game/
  */
@@ -28,13 +28,14 @@ const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
 let gameStart = false;
 let hasFlippedCard = false;
 let lockMoves = false;
-let firstCard, secondCard;
+let firstCard;
+let secondCard;
 let moves = 0;
 let matchedPairs = 0;
 let completedTime = "";
 
 /**
- * MOVE COUNTER which increments the counter as 
+ * MOVE COUNTER which increments the counter as
  * the user clicks a new pair of cards
  * coding support: https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
  */
@@ -97,15 +98,15 @@ function flipCard() {
     if (lockMoves) return;
     if (this === firstCard) return;
 
-    this.classList.add("flip");
+    this.classList.add("flip"); // Card is flipped using CSS styling
 
     if (!hasFlippedCard) {
-        // First card is clicked
+        // First card is clicked is stored as this
         hasFlippedCard = true;
         firstCard = this;
         return;
     }
-    // Second card is clicked
+    // Second card is clicked is stored as this
     secondCard = this;
 
     checkForMatch();
@@ -127,7 +128,7 @@ function checkForMatch() {
 }
 
 /**
- * If there is a match, then the cards are disabled from 
+ * If there is a match, then the cards are disabled from
  * flipping again and remain showing their 'front-faces'
  */
 function disableCards() {
@@ -140,7 +141,7 @@ function disableCards() {
 }
 
 /**
- * If cards are not a match, then they are flipped back 
+ * If cards are not a match, then they are flipped back
  * after a timeout delay and a move is added to the counter
  */
 function noMatch() {
@@ -161,11 +162,11 @@ function noMatch() {
  */
 function resetCardPairFlip() {
     hasFlippedCard = lockMoves = false;
-		firstCard = secondCard = null;
+    firstCard = secondCard = null;
 }
 
 /**
- * Shuffles each set of cards based on its type: 
+ * Shuffles each set of cards based on its type:
  * either cell image / function within the separate card containers
  */
 function shuffle(cards) {
@@ -192,7 +193,7 @@ function winGame() {
 }
 
 /**
- * Switches on the WIN MODAL when activated 
+ * Switches on the WIN MODAL when activated
  * and adds final time and move score
  * code support: https://getbootstrap.com/docs/4.0/components/modal/
  */
@@ -206,12 +207,12 @@ function switchOn(myModalId) {
 }
 
 /**
- * Event listeners attached and cards shuffled 
+ * Event listeners attached and cards shuffled
  * only when page has fully loaded
  */
 window.addEventListener("DOMContentLoaded", (event) => {
    /**
-     * When the HELP MODAL is closed by clicking 
+     * When the HELP MODAL is closed by clicking
      * off the screen instead of the button,
      * boostrap's modal class fires an event to restart the timer
      * code support: https://getbootstrap.com/docs/4.6/components/modal/
