@@ -41,6 +41,7 @@ p {
 }
 
 /*--game cards--*/
+/*--Code to style cards with flip animation from https://marina-ferreira.github.io/tutorials/js/memory-game/ --*/
 
 #cell-card-container, #descriptive-card-container {
     width: 33vw;
@@ -151,7 +152,7 @@ p {
     width: 25%;
 }
 
-/*--override bootstrap styling for modal--*/
+/*--override bootstrap styling for modal and table--*/
 .modal-header {
     display: inline !important;
 }
