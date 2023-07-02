@@ -39,6 +39,17 @@ The deployed URL was used to validate the CSS since a single file was used for t
 | style.css | [Jigsaw - deployed link](#) | ![screenshot](documentation/testing/validation-css-deployed-link.png) | The errors shown are from imported Boostrap styling. The warnings are from Bootstrap and also **-webkit-fill-available** is a vendor extension |
 | style.css | [Jigsaw - direct input link](#)  |![screenshot - direct input](documentation/testing/validation-css-code.png)  | Pass: No Errors |
 
+### JavaScript
+
+I have used the recommended [JS Lint](https://www.jslint.com/) to validate my JS script.
+
+<!-- The deployed URL was used to validate the JS since a single file was used for the project. This gave a custom URL which is included and can be used for future validation. Evidence from the direct code input validation was also included. -->
+
+| File | JSLint URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+<!-- | style.css | [Jigsaw - deployed link](#) | ![screenshot](documentation/testing/validation-css-deployed-link.png) | The errors shown are from imported Boostrap styling. The warnings are from Bootstrap and also **-webkit-fill-available** is a vendor extension |
+| style.css | [Jigsaw - direct input link](#)  |![screenshot - direct input](documentation/testing/validation-css-code.png)  | Pass: No Errors | -->
+
 ## Browser Compatibility
 
 The live/deployed site was tested on multiple browsers to check for compatibility issues.

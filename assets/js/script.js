@@ -12,7 +12,6 @@ const cardsFunctions = document.querySelectorAll(".function-card");
 const movesElement = document.querySelector("#move-counter");
 const timerElement = document.querySelector("#timer");
 const restartBtn = document.getElementById("restartBtn");
-const helpModalBtn = document.getElementById("helpModalBtn");
 const COMPLETE_PAIRS = 8;
 const TIME_UPDATE_FREQUENCY_MSECS = 1000;
 const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
@@ -50,7 +49,6 @@ function moveCounter() {
 let time;
 let minutes = 0;
 let seconds = 0;
-let timerOn = false;
 
 function startTimer() {
     //Sets the time interval to update for each 1 second
