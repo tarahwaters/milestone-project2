@@ -15,6 +15,7 @@ const restartBtn = document.getElementById('restartBtn');
 const helpModalBtn = document.getElementById('helpModalBtn');
 const completePairs = 8;
 const TIME_UPDATE_FREQUENCY_MSECS = 1000;
+const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
 
 /**
  * coding support for main functioning of the game and flip features (adapted for use): 
@@ -160,7 +161,7 @@ function noMatch() {
     secondCard.classList.remove('flip');
 
     resetBoard();
-  }, 2000);
+  }, RESET_CARDS_TIME_INTERVAL_MSECS);
 
   moveCounter();
 }
