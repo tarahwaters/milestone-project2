@@ -13,7 +13,7 @@ const movesElement = document.querySelector('#move-counter');
 const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 const helpModalBtn = document.getElementById('helpModalBtn');
-const completePairs = 8;
+const COMPLETE_PAIRS = 8;
 const TIME_UPDATE_FREQUENCY_MSECS = 1000;
 const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
 
@@ -133,7 +133,7 @@ function checkForMatch() {
 
   cardMatch ? disableCards() : noMatch();
 
-  if (matchedPairs === completePairs) winGame();
+  if (matchedPairs === COMPLETE_PAIRS) winGame();
 }
 
 /**
@@ -144,7 +144,7 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
-    resetBoard(); // resets the flipped pairs
+    resetCardPairFlip(); // resets the flipped pairs
 
     moveCounter(); // adds a move to the counter
 }
@@ -160,7 +160,7 @@ function noMatch() {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
 
-    resetBoard();
+    resetCardPairFlip();
   }, RESET_CARDS_TIME_INTERVAL_MSECS);
 
   moveCounter();
@@ -169,7 +169,7 @@ function noMatch() {
 /**
  * resets the flipped card pairs after each round 
  */
-function resetBoard() {
+function resetCardPairFlip() {
   [hasFlippedCard, lockMoves] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
