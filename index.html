@@ -26,8 +26,7 @@
 
     <!-- main game template code followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
     <main>
-        <section>
-            <div id="game-grid">
+        <div id="game-grid">
                 <div id="game-feedback" class="row justify-content-between">
                     <!-- code for timer adapted from https://codepen.io/FoxyStoat/pen/erzLMG and https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ -->
                     <div class="col-4" onclick="flipcard()">
@@ -112,8 +111,7 @@
             <div id="button-container">
                 <button type="button" id="restartBtn" class="btn btn-secondary game-btn" onclick="restartGame()">Reset</button> 
                 <button type="button" id="helpModalBtn" class="btn btn-secondary game-btn" data-toggle="modal" data-target="#helpModal" onclick="stopTimer()">How to Play</button>
-            </div>
-        </section>
+        </div>
 
         <!-- code for modals adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/ -->
         
