@@ -24,14 +24,16 @@
         </div>
     </header>
 
-    <!-- code template followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
+    <!-- main game template code followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
     <main>
         <section>
             <div id="game-grid">
                 <div id="game-feedback" class="row justify-content-between">
+                    <!-- code for timer adapted from https://codepen.io/FoxyStoat/pen/erzLMG and https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ -->
                     <div class="col-4" onclick="flipcard()">
                         <span id="timer">Time: 00:00</span>
                     </div>
+                    <!-- code for move counter adapted from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1 -->
                     <div class="col-4" onclick="flipcard()">
                         Moves: <span id="move-counter">0</span>
                     </div>
@@ -106,13 +108,16 @@
                     </div>
                 </div>
             </div>
+            <!-- code for buttons from bootstrap https://getbootstrap.com/docs/4.0/components/buttons/ -->
             <div id="button-container">
                 <button type="button" id="restartBtn" class="btn btn-secondary game-btn" onclick="restartGame()">Restart</button> 
                 <button type="button" id="helpModalBtn" class="btn btn-secondary game-btn" data-toggle="modal" data-target="#helpModal" onclick="stopTimer()">How to Play</button>
             </div>
         </section>
 
-            <!-- HowToPlay modal - code adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/-->
+        <!-- code for modals adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/ -->
+        
+        <!-- HowToPlay modal-->
         <section>
             <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -189,6 +194,7 @@
                 </div>
             </div>
             </section>
+
             <!-- WinMessage modal pop up -->
             <section>
                 <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModalTitle" aria-hidden="true">
