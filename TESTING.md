@@ -23,10 +23,7 @@ I validated each of the live pages using the deployed URL. This gave me a custom
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](#) | ![screenshot](documentation/testing/validation-html-home.jpg) | Pass: No Errors |
-| About | [W3C](#) | ![screenshot](documentation/testing/validation-html-about.jpg) | Pass: No Errors |
-| Contact | [W3C](#) | ![screenshot](documentation/testing/validation-html-contact.jpg) | Pass: No Errors |
-| Redirect (confirmation) | [W3C](#) | ![screenshot](documentation/testing/validation-html-redirect.jpg) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F) | ![screenshot](documentation/testing/html-validation-results.png) | Pass: No Errors, 1 warning due to code credit url |
 
 ### CSS
 
