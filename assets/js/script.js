@@ -14,6 +14,7 @@ const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 const helpModalBtn = document.getElementById('helpModalBtn');
 const completePairs = 8;
+const TIME_UPDATE_FREQUENCY-MSECS = 1000;
 
 /**
  * coding support for main functioning of the game and flip features (adapted for use): 
@@ -46,7 +47,7 @@ function moveCounter() {
 let time;
 let minutes = 0;
 let seconds = 0;
-let startTimer = false;
+let timerOn = false;
 
 function startTimer() {
   //sets the time interval to update for each 1 second
@@ -59,7 +60,7 @@ function startTimer() {
 
   // while active, adds the time taken to play the game in html
   timerElement.innerHTML = "Time: " + minutes + " : " + seconds;
-  }, 1000);
+  }, TIME_UPDATE_FREQUENCY-MSECS);
 }
 
  function stopTimer() {
