@@ -67,7 +67,7 @@ function startTimer() {
  }
 
 /**
- * when the help modal is closed by clicking off the screen instead of the button, 
+ * when the HELP MODAL is closed by clicking off the screen instead of the button, 
  * boostrap's modal class fires an event to restart the timer
  * code support: https://getbootstrap.com/docs/4.6/components/modal/
  */
@@ -97,7 +97,7 @@ function resumeTimerOnModalClose() {
 allCards.forEach(card => card.addEventListener('click', flipCard));
 
 /**
- * flips and stores the first and second clicked cards 
+ * FLIPS and stores the first and second clicked cards 
  * before checking if they are a match
  */
 function flipCard() {
@@ -123,7 +123,7 @@ function flipCard() {
 }
 
 /**
- * checks the two clicked cards for a match  
+ * checks the two clicked cards for a MATCHING PAIR 
  */
 function checkForMatch() {
   let cardMatch = firstCard.dataset.match === secondCard.dataset.match;
@@ -186,7 +186,7 @@ function shuffle(cards) {
 shuffle(cardsCells);
 shuffle(cardsFunctions);
 
-/** reset game button responds to a click
+/** RESTART GAME BUTTON responds to a click
  */
 restartBtn.onclick = function() {   // function to reset and restart game 
     restartGame();
@@ -206,7 +206,7 @@ function winGame() {
 }
 
 /**
- * switches on the winModal when activated and adds final time and move score
+ * switches on the WIN MODAL when activated and adds final time and move score
  * code support: https://getbootstrap.com/docs/4.0/components/modal/
  */
 function switchOn(myModalId) {
