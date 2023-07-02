@@ -18,7 +18,8 @@ const TIME_UPDATE_FREQUENCY_MSECS = 1000;
 const RESET_CARDS_TIME_INTERVAL_MSECS = 2000;
 
 /**
- * Coding support for main functioning of the game and flip features (adapted for use):
+ * Coding support for main functioning of the game 
+ * and flip features (adapted for use):
  * https://marina-ferreira.github.io/tutorials/js/memory-game/
  */
 
@@ -31,7 +32,8 @@ let matchedPairs = 0;
 let completedTime = "";
 
 /**
- * MOVE COUNTER which increments the counter as the user clicks a new pair of cards
+ * MOVE COUNTER which increments the counter as 
+ * the user clicks a new pair of cards
  * coding support: https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
  */
 function moveCounter() {
@@ -124,8 +126,8 @@ function checkForMatch() {
 }
 
 /**
- * If there is a match, then the cards are disabled from flipping again and remain
- * showing their 'front-faces'
+ * If there is a match, then the cards are disabled from 
+ * flipping again and remain showing their 'front-faces'
  */
 function disableCards() {
     firstCard.removeEventListener("click", flipCard);
@@ -137,8 +139,8 @@ function disableCards() {
 }
 
 /**
- * If cards are not a match, then they are flipped back after a timeout delay
- * and a move is added to the counter
+ * If cards are not a match, then they are flipped back 
+ * after a timeout delay and a move is added to the counter
  */
 function noMatch() {
     lockMoves = true;
@@ -162,8 +164,8 @@ function resetCardPairFlip() {
 }
 
 /**
- * Shuffles each set of cards based on its type: either cell image / function
- * within the separate game card containers
+ * Shuffles each set of cards based on its type: 
+ * either cell image / function within the separate card containers
  */
 function shuffle(cards) {
     cards.forEach((card) => {
@@ -189,7 +191,8 @@ function winGame() {
 }
 
 /**
- * Switches on the WIN MODAL when activated and adds final time and move score
+ * Switches on the WIN MODAL when activated 
+ * and adds final time and move score
  * code support: https://getbootstrap.com/docs/4.0/components/modal/
  */
 function switchOn(myModalId) {
@@ -207,7 +210,8 @@ function switchOn(myModalId) {
  */
 window.addEventListener("DOMContentLoaded", (event) => {
    /**
-     * When the HELP MODAL is closed by clicking off the screen instead of the button,
+     * When the HELP MODAL is closed by clicking 
+     * off the screen instead of the button,
      * boostrap's modal class fires an event to restart the timer
      * code support: https://getbootstrap.com/docs/4.6/components/modal/
      */
