@@ -14,7 +14,7 @@ const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 const helpModalBtn = document.getElementById('helpModalBtn');
 const completePairs = 8;
-const TIME_UPDATE_FREQUENCY-MSECS = 1000;
+const TIME_UPDATE_FREQUENCY_MSECS = 1000;
 
 /**
  * coding support for main functioning of the game and flip features (adapted for use): 
