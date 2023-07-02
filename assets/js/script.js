@@ -48,7 +48,7 @@ let minutes = 0;
 let seconds = 0;
 let startTimer = false;
 
-function timer() {
+function startTimer() {
   //sets the time interval to update for each 1 second
   time = setInterval(function() {
     seconds++;
@@ -73,7 +73,7 @@ function timer() {
  */
 $('#helpModal').on('hidden.bs.modal', function (event) {
   if (firstCard) {
-    timer();
+    startTimer();
   }
 })
 
@@ -83,7 +83,7 @@ $('#helpModal').on('hidden.bs.modal', function (event) {
 */
 function resumeTimerOnModalClose() {
   if (gameStart) {
-    timer();
+    startTimer();
   }
 }
 
@@ -103,7 +103,7 @@ allCards.forEach(card => card.addEventListener('click', flipCard));
 function flipCard() {
   if (!gameStart) {
     gameStart = true;
-    timer();
+    startTimer();
   }
   if (lockMoves) return;
   if (this === firstCard) return;
