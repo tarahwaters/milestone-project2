@@ -60,7 +60,7 @@ function startTimer() {
 
   // while active, adds the time taken to play the game in html
   timerElement.innerHTML = "Time: " + minutes + " : " + seconds;
-  }, TIME_UPDATE_FREQUENCY-MSECS);
+  }, TIME_UPDATE_FREQUENCY_MSECS);
 }
 
  function stopTimer() {
