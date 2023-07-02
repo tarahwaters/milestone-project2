@@ -76,6 +76,7 @@ p {
     position: absolute;
     background-color: #ffe787;
     transform: rotateY(180deg);
+    object-fit: contain;
 }
 
 .back-face {
@@ -84,6 +85,7 @@ p {
     position: absolute;
     background-color: #2176FF;
     backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .front-face-function {
@@ -236,7 +238,7 @@ p {
     }
 
     .front-face-function {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding: 0.5rem 0.3rem;
     }
 
