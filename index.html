@@ -1,251 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Memory card matching game for learning and revising the topic of Specialised Cells in Biology"
-    >
-    <title>Specialised Cells - GCSE Biology Revision Game</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Memory card matching game for learning and revising the topic of Specialised Cells in Biology">
+	<title>Specialised Cells - GCSE Biology Revision Game</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+	<!-- css -->
+	<link rel="stylesheet" href="assets/css/style.css"> </head>
+
 <body>
-    <header>
-        <div>
-            <h1>Specialised Cells</h1>
-                <h2>GCSE Biology Matching Pairs Revision Game</h2>            
-        </div>
-    </header>
-
-    <!-- main game template code followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
-    <main>
-        <div id="game-grid">
-                <div id="game-feedback" class="row justify-content-between">
-                    <!-- code for timer adapted from https://codepen.io/FoxyStoat/pen/erzLMG and https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ -->
-                    <div class="col-4" onclick="flipcard()">
-                        <span id="timer">Time: 00:00</span>
-                    </div>
-                    <!-- code for move counter adapted from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1 -->
-                    <div class="col-4" onclick="flipcard()">
-                        Moves: <span id="move-counter">0</span>
-                    </div>
-                </div>
-                <div id="cell-card-container">
-                    <div class="game-card cell-card" data-match="cilia-cell">
-                        <img class="front-face" src="assets/images/cards/cilia-cell.webp" alt="Ciliated Epithelial Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="egg-cell">
-                        <img class="front-face" src="assets/images/cards/egg-cell.webp" alt="Egg Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="muscle-cell">
-                        <img class="front-face" src="assets/images/cards/muscle-cell.webp" alt="Muscle Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="nerve-cell">
-                        <img class="front-face" src="assets/images/cards/nerve-cell.webp" alt="Nerve Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="palisade-cell">
-                        <img class="front-face" src="assets/images/cards/palisade-cell.webp" alt="Palisade Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="red-blood-cell">
-                        <img class="front-face" src="assets/images/cards/red-blood-cell.webp" alt="Red Blood Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="root-hair-cell">
-                        <img class="front-face" src="assets/images/cards/root-hair-cell.webp" alt="Root Hair Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                    <div class="game-card cell-card" data-match="sperm-cell">
-                        <img class="front-face" src="assets/images/cards/sperm-cell.webp" alt="Sperm Cell">
-                        <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card">
-                    </div>
-                </div>
-
-                <div id="descriptive-card-container">
-                    <div class="game-card function-card" data-match="cilia-cell">
-                        <div class="front-face-function">This cell uses tiny hairs to trap bacteria and dust in air passages.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="egg-cell">
-                        <div class="front-face-function">This cell fertilises with a sperm then develops into an embryo.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="muscle-cell">
-                        <div class="front-face-function">This cell shortens and lengthens, allowing animals to move.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="nerve-cell">
-                        <div class="front-face-function">This cell carries electrical signals to the brain and body.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="palisade-cell">
-                        <div class="front-face-function">This cell helps plants do photosynthesis to make food from sunlight.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="red-blood-cell">
-                        <div class="front-face-function">This cell transports oxygen around the body.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="root-hair-cell">
-                        <div class="front-face-function">This plant cell absorbs water and minerals from soil.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                    <div class="game-card function-card" data-match="sperm-cell">
-                        <div class="front-face-function">This cell fuses with an egg cell for fertilisation to occur.</div>
-                        <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card">
-                    </div>
-                </div>
-            </div>
-            <!-- code for buttons from bootstrap https://getbootstrap.com/docs/4.0/components/buttons/ -->
-            <div id="button-container">
-                <button type="button" id="restartBtn" class="btn btn-secondary game-btn" onclick="restartGame()">Reset</button> 
-                <button type="button" id="helpModalBtn" class="btn btn-secondary game-btn" data-toggle="modal" data-target="#helpModal" onclick="stopTimer()">How to Play</button>
-        </div>
-
-        <!-- code for modals adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/ -->
-        
-        <!-- HowToPlay modal-->
-        <section>
-            <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="helpModalTitle">How To Play</h3>
-                        </div>
-                        <div class="modal-body">
-                            <p>This is a matching pairs game to help you learn and revise <strong>Specialised Cells and their Functions</strong>.</p>
-                            <p>A specialised cell is any cell that has developed features to perform a specific job.</p>
-                            <p>Match the <strong>'Cell Type'</strong> images with their <strong>'Function'</strong> descriptions.</p>
-                            <p>
-                                <img src="assets/images/cards/backface-cell.webp" alt="Cell Type card image">
-                                <img src="assets/images/cards/backface-function.webp" alt="Function card description">
-                            </p>
-                            <p><strong>Click any card to start the game!</strong></p>
-                            <p>You can read about the different cell types from the game here:</p>
-                        <div>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                    <th scope="col">Cell Type</th>
-                                    <th scope="col">Function</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"><img src="assets/images/instructions/cilia-cell.webp" alt="Ciliated Epithelial Cell">
-                                            <br>Ciliated Epithelial Cell</th>
-                                        <td>This cell uses tiny hairs to trap bacteria and dust in air passages.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="assets/images/instructions/egg-cell.webp" alt="Egg Cell">
-                                        <br>Egg Cell</th>
-                                        <td>This cell fertilises with a sperm then develops into an embryo.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="assets/images/instructions/muscle-cell.webp" alt="Muscle Cell">
-                                        <br>Muscle Cell</th>
-                                        <td>This cell shortens and lengthens, allowing animals to move.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="assets/images/instructions/nerve-cell.webp" alt="Nerve Cell">
-                                        <br>Nerve Cell</th>
-                                        <td>This cell carries electrical signals to the brain and body.</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><img src="assets/images/instructions/palisade-cell.webp" alt="Palisade Cell">
-                                        <br>Palisade Cell</th>
-                                        <td>This cell helps plants do photosynthesis to make food from sunlight</td>
-                                    </tr>
-                                        <tr>
-                                        <th scope="row"><img src="assets/images/instructions/red-blood-cell.webp" alt="Red Blood Cell">
-                                        <br>Red Blood Cell</th>
-                                        <td>This cell transports oxygen around the body.</td>
-                                    </tr>
-                                        <tr>
-                                        <th scope="row"><img src="assets/images/instructions/root-hair-cell.webp" alt="Root Hair Cell">
-                                        <br>Root Hair Cell</th>
-                                        <td>This plant cell absorbs water and minerals from soil.</td>
-                                    </tr>
-                                        <tr>
-                                        <th scope="row"><img src="assets/images/instructions/sperm-cell.webp" alt="Sperm Cell">
-                                        <br>Sperm Cell</th>
-                                        <td>This cell fuses with an egg cell for fertilisation to occur.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </div>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="button" id="closeModalBtn" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="resumeTimerOnModalClose()">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
-
-            <!-- WinMessage modal pop up -->
-            <section>
-                <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="winModalTitle">Well Done!</h3>
-                                <p><span id="totalTime">Time: 00:00</span></p>
-                                <p>Number of moves: <span id="totalMoves">0</span></p>
-                            </div>
-                            <div class="modal-body">
-                              <p>
-                                <img id="winner-gif" src="assets/images/winner/winner-message.gif" alt="You matched all the pairs!">
-                              </p>
-                              <p>
-                                <br>
-                                Click the links below for acess to <strong>FREE</strong> revision resources!
-                              </p>
-                              <p>
-                                <a href="assets/images/winner/specialised-cells-info-cards.pdf" target="_blank">Specialised Cells Info Cards</a>
-                                <br>(containing cell locations, functions and features)
-                              </p>
-                              <p>
-                                <a href="assets/images/winner/specialised-cells-info-cards.pdf" target="_blank"><img src="assets/images/winner/info-cards-preview.png" alt="Preview of Info Cards Resource"></a>
-                              </p>
-                              <p>
-                                These flashcards can be printed to make your own memory card game at home:
-                              </p>
-                              <p>
-                                <a href="assets/images/winner/specialised-cells-flashcards.pdf" target="_blank">Specialised Cells Flashcards</a>
-                              </p>
-                              <p>
-                                <a href="assets/images/winner/specialised-cells-flashcards.pdf" target="_blank"><img src="assets/images/winner/flashcards-page1-preview.png" alt="Preview of Flashcards Page 1">
-                                <img src="assets/images/winner/flashcards-page2-preview.png" alt="Preview of Flashcards Page 2"></a>
-                              </p>                       
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="restartGame()">Play Again!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </section>   
-        
-    </main>
-
-    <footer id="footer">
-        © 2023 Copyright Tarah Waters. All Rights Reserved.
-    </footer>
-    <!-- js script -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+	<header>
+		<div>
+			<h1>Specialised Cells</h1>
+			<h2>GCSE Biology Matching Pairs Revision Game</h2> </div>
+	</header>
+	<!-- main game template code followed using tutorial by marina-ferreira at https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
+	<main>
+		<div id="game-grid">
+			<div id="game-feedback" class="row justify-content-between">
+				<!-- code for timer adapted from https://codepen.io/FoxyStoat/pen/erzLMG and https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ -->
+				<div class="col-4" onclick="flipcard()"> <span id="timer">Time: 00:00</span> </div>
+				<!-- code for move counter adapted from https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1 -->
+				<div class="col-4" onclick="flipcard()"> Moves: <span id="move-counter">0</span> </div>
+			</div>
+			<div id="cell-card-container">
+				<div class="game-card cell-card" data-match="cilia-cell"> <img class="front-face" src="assets/images/cards/cilia-cell.webp" alt="Ciliated Epithelial Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="egg-cell"> <img class="front-face" src="assets/images/cards/egg-cell.webp" alt="Egg Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="muscle-cell"> <img class="front-face" src="assets/images/cards/muscle-cell.webp" alt="Muscle Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="nerve-cell"> <img class="front-face" src="assets/images/cards/nerve-cell.webp" alt="Nerve Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="palisade-cell"> <img class="front-face" src="assets/images/cards/palisade-cell.webp" alt="Palisade Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="red-blood-cell"> <img class="front-face" src="assets/images/cards/red-blood-cell.webp" alt="Red Blood Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="root-hair-cell"> <img class="front-face" src="assets/images/cards/root-hair-cell.webp" alt="Root Hair Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+				<div class="game-card cell-card" data-match="sperm-cell"> <img class="front-face" src="assets/images/cards/sperm-cell.webp" alt="Sperm Cell"> <img class="back-face" src="assets/images/cards/backface-cell.webp" alt="Cell Type Game Card"> </div>
+			</div>
+			<div id="descriptive-card-container">
+				<div class="game-card function-card" data-match="cilia-cell">
+					<div class="front-face-function">This cell uses tiny hairs to trap bacteria and dust in air passages.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="egg-cell">
+					<div class="front-face-function">This cell fertilises with a sperm then develops into an embryo.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="muscle-cell">
+					<div class="front-face-function">This cell shortens and lengthens, allowing animals to move.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="nerve-cell">
+					<div class="front-face-function">This cell carries electrical signals to the brain and body.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="palisade-cell">
+					<div class="front-face-function">This cell helps plants do photosynthesis to make food from sunlight.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="red-blood-cell">
+					<div class="front-face-function">This cell transports oxygen around the body.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="root-hair-cell">
+					<div class="front-face-function">This plant cell absorbs water and minerals from soil.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+				<div class="game-card function-card" data-match="sperm-cell">
+					<div class="front-face-function">This cell fuses with an egg cell for fertilisation to occur.</div> <img class="back-face" src="assets/images/cards/backface-function.webp" alt="Function Game Card"> </div>
+			</div>
+		</div>
+		<!-- code for buttons from bootstrap https://getbootstrap.com/docs/4.0/components/buttons/ -->
+		<div id="button-container">
+			<button type="button" id="restartBtn" class="btn btn-secondary game-btn" onclick="restartGame()">Reset</button>
+			<button type="button" id="helpModalBtn" class="btn btn-secondary game-btn" data-toggle="modal" data-target="#helpModal" onclick="stopTimer()">How to Play</button>
+		</div>
+		<!-- code for modals adapted from bootstrap: https://getbootstrap.com/docs/4.0/components/modal/ and https://nualagr.github.io/the-lord-of-the-rings-game/ -->
+		<!-- HowToPlay modal-->
+		<section>
+			<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="helpModalTitle">How To Play</h3> </div>
+						<div class="modal-body">
+							<p>This is a matching pairs game to help you learn and revise <strong>Specialised Cells and their Functions</strong>.</p>
+							<p>A specialised cell is any cell that has developed features to perform a specific job.</p>
+							<p>Match the <strong>'Cell Type'</strong> images with their <strong>'Function'</strong> descriptions.</p>
+							<p> <img src="assets/images/cards/backface-cell.webp" alt="Cell Type card image"> <img src="assets/images/cards/backface-function.webp" alt="Function card description"> </p>
+							<p><strong>Click any card to start the game!</strong></p>
+							<p>You can read about the different cell types from the game here:</p>
+							<div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Cell Type</th>
+											<th scope="col">Function</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/cilia-cell.webp" alt="Ciliated Epithelial Cell">
+												<br>Ciliated Epithelial Cell</th>
+											<td>This cell uses tiny hairs to trap bacteria and dust in air passages.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/egg-cell.webp" alt="Egg Cell">
+												<br>Egg Cell</th>
+											<td>This cell fertilises with a sperm then develops into an embryo.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/muscle-cell.webp" alt="Muscle Cell">
+												<br>Muscle Cell</th>
+											<td>This cell shortens and lengthens, allowing animals to move.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/nerve-cell.webp" alt="Nerve Cell">
+												<br>Nerve Cell</th>
+											<td>This cell carries electrical signals to the brain and body.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/palisade-cell.webp" alt="Palisade Cell">
+												<br>Palisade Cell</th>
+											<td>This cell helps plants do photosynthesis to make food from sunlight</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/red-blood-cell.webp" alt="Red Blood Cell">
+												<br>Red Blood Cell</th>
+											<td>This cell transports oxygen around the body.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/root-hair-cell.webp" alt="Root Hair Cell">
+												<br>Root Hair Cell</th>
+											<td>This plant cell absorbs water and minerals from soil.</td>
+										</tr>
+										<tr>
+											<th scope="row"><img src="assets/images/instructions/sperm-cell.webp" alt="Sperm Cell">
+												<br>Sperm Cell</th>
+											<td>This cell fuses with an egg cell for fertilisation to occur.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="modal-footer justify-content-center">
+							<button type="button" id="closeModalBtn" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="resumeTimerOnModalClose()">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- WinMessage modal pop up -->
+		<section>
+			<div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="winModalTitle">Well Done!</h3>
+							<p><span id="totalTime">Time: 00:00</span></p>
+							<p>Number of moves: <span id="totalMoves">0</span></p>
+						</div>
+						<div class="modal-body">
+							<p> <img id="winner-gif" src="assets/images/winner/winner-message.gif" alt="You matched all the pairs!"> </p>
+							<p>
+								<br> Click the links below for acess to <strong>FREE</strong> revision resources! </p>
+							<p> <a href="assets/images/winner/specialised-cells-info-cards.pdf" target="_blank">Specialised Cells Info Cards</a>
+								<br>(containing cell locations, functions and features) </p>
+							<p>
+								<a href="assets/images/winner/specialised-cells-info-cards.pdf" target="_blank"><img src="assets/images/winner/info-cards-preview.png" alt="Preview of Info Cards Resource"></a>
+							</p>
+							<p> These flashcards can be printed to make your own memory card game at home: </p>
+							<p> <a href="assets/images/winner/specialised-cells-flashcards.pdf" target="_blank">Specialised Cells Flashcards</a> </p>
+							<p>
+								<a href="assets/images/winner/specialised-cells-flashcards.pdf" target="_blank"><img src="assets/images/winner/flashcards-page1-preview.png" alt="Preview of Flashcards Page 1"> <img src="assets/images/winner/flashcards-page2-preview.png" alt="Preview of Flashcards Page 2"></a>
+							</p>
+						</div>
+						<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-secondary game-btn" data-dismiss="modal" onclick="restartGame()">Play Again!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="footer"> © 2023 Copyright Tarah Waters. All Rights Reserved. </footer>
+	<!-- js script -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"></script>
 </body>
+
 </html>
