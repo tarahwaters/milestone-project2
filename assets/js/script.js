@@ -157,8 +157,8 @@ function noMatch() {
  * Resets the flipped card pairs after each round
  */
 function resetCardPairFlip() {
-    hasFlippedCard, (lockMoves = false);
-    firstCard, (secondCard = null);
+    hasFlippedCard = lockMoves = false;
+	firstCard = secondCard = null;
 }
 
 /**
