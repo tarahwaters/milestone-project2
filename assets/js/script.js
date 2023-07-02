@@ -1,5 +1,9 @@
 /**
- * coding support for main functioning of the game and flip features (adapted for use): https://marina-ferreira.github.io/tutorials/js/memory-game/
+ * @fileoverview contains the javascript needed to run the 'Specialised Cells - GCSE Biology Revision Game'
+ * this is a memory matching card pair game which involves the user flipping cards to match
+ * cell type images with their functional descriptions.
+ * there are additional js game functions for the user to track their time and move score, reset the game,
+ * and view instructions as well as a message upon game completion.
  */
 
 const allCards = document.querySelectorAll('.game-card');
@@ -10,6 +14,11 @@ const timerElement = document.querySelector('#timer');
 const restartBtn = document.getElementById('restartBtn');
 const helpModalBtn = document.getElementById('helpModalBtn');
 const completePairs = 8;
+
+/**
+ * coding support for main functioning of the game and flip features (adapted for use): 
+ * https://marina-ferreira.github.io/tutorials/js/memory-game/
+ */
 
 let gameStart = false;
 let hasFlippedCard = false;
