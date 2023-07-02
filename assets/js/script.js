@@ -129,7 +129,7 @@ function checkForMatch() {
   let cardMatch = firstCard.dataset.match === secondCard.dataset.match;
   if (cardMatch) matchedPairs += 1;
 
-  cardMatch ? disableCards() : unflipCards();
+  cardMatch ? disableCards() : noMatch();
 
   if (matchedPairs === completePairs) winGame();
 }
@@ -151,7 +151,7 @@ function disableCards() {
  * if cards are not a match, then they are flipped back after a timeout delay
  * and a move is added to the counter 
  */
-function unflipCards() {
+function noMatch() {
   lockMoves = true;
 
   setTimeout(() => {
