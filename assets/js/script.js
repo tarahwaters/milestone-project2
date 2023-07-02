@@ -1,7 +1,6 @@
 /* jshint esversion: 6 */
 /* global $ */
 
-
 /**
  * @fileoverview contains the javascript needed to run the 'Specialised Cells - GCSE Biology Revision Game'
  * this is a memory matching card pair game which involves the user flipping cards to match
@@ -162,7 +161,7 @@ function noMatch() {
  */
 function resetCardPairFlip() {
     hasFlippedCard = lockMoves = false;
-	firstCard = secondCard = null;
+		firstCard = secondCard = null;
 }
 
 /**
