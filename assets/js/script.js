@@ -206,8 +206,6 @@ function switchOn(myModalId) {
  * only when page has fully loaded
  */
 window.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-
    /**
      * When the HELP MODAL is closed by clicking off the screen instead of the button,
      * boostrap's modal class fires an event to restart the timer
