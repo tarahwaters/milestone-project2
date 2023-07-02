@@ -88,6 +88,15 @@ function resumeTimerOnModalClose() {
 }
 
 /**
+ * MAIN CARD GAME FUNCTIONALITY
+ */
+
+/**
+ * responds to a card click event and then runs the flipCard function
+ */
+allCards.forEach(card => card.addEventListener('click', flipCard));
+
+/**
  * flips and stores the first and second clicked cards 
  * before checking if they are a match
  */
@@ -126,19 +135,21 @@ function checkForMatch() {
 }
 
 /**
- * if there is a match, then the cards are disabled from flipping back
+ * if there is a match, then the cards are disabled from flipping again and remain
+ * showing their 'front-faces'
  */
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
-    resetBoard();
+    resetBoard(); // resets the flipped pairs
 
-    moveCounter(); // add a move to the counter
+    moveCounter(); // adds a move to the counter
 }
 
 /**
- * if cards are not a match, then they are flipped back after a timeout delay 
+ * if cards are not a match, then they are flipped back after a timeout delay
+ * and a move is added to the counter 
  */
 function unflipCards() {
   lockMoves = true;
@@ -150,7 +161,7 @@ function unflipCards() {
     resetBoard();
   }, 2000);
 
-  moveCounter(); // adds a move to counter
+  moveCounter();
 }
 
 /**
@@ -162,19 +173,9 @@ function resetBoard() {
 }
 
 /**
- * ends game once all cards have been matched 
- */
-
-function winGame() {
-  stopTimer();
-  switchOn("#winModal");
-}
-
-/**
  * shuffles each set of cards based on its type: either cell image / function
  * within the separate game card containers
  */
-
 function shuffle(cards) {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 8);
@@ -185,27 +186,27 @@ function shuffle(cards) {
 shuffle(cardsCells);
 shuffle(cardsFunctions);
 
-/**
- * responds to a click event and then runs the flipCard function
+/** reset game button responds to a click
  */
-allCards.forEach(card => card.addEventListener('click', flipCard));
-
-// game button event listeners and their functions
-
 restartBtn.onclick = function() {   // function to reset and restart game 
-    restartGame(); // calls the restartGame function
+    restartGame();
 };
 
-/**
- * resets and restarts the game by reloading the page
- */
-
 function restartGame() {
-  location.reload()
+  location.reload() // resets and restarts the game by reloading the page
 }
 
 /**
- * switches on the modal when activated and adds final time and move score
+ * ends the game once all cards have been matched,
+ * stops the timer and shows the win message modal
+ */
+function winGame() {
+  stopTimer();
+  switchOn("#winModal");
+}
+
+/**
+ * switches on the winModal when activated and adds final time and move score
  * code support: https://getbootstrap.com/docs/4.0/components/modal/
  */
 function switchOn(myModalId) {
