@@ -29,7 +29,7 @@ let matchedPairs = 0;
 let completedTime = "";
 
 /**
- * functions for the move counter - adding to and reseting the number
+ * MOVE COUNTER which increments the counter as the user clicks a new pair of cards
  * coding support: https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1 
  */
 function moveCounter() {  
@@ -38,7 +38,8 @@ function moveCounter() {
 }
 
 /**
- * declarations and functions for the updating the timer during gameplay (triggered after first card click)
+ * TIMER which increments in seconds during gameplay (triggered after first card click) 
+ * and pauses if the instruction modal is open
  * coding support: https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/, 
  * https://www.w3schools.com/js/js_timing.asp and https://codepen.io/FoxyStoat/pen/erzLMG 
  */
@@ -64,6 +65,27 @@ function timer() {
  function stopTimer() {
      clearInterval(time);
  }
+
+/**
+ * when the help modal is closed by clicking off the screen instead of the button, 
+ * boostrap's modal class fires an event to restart the timer
+ * code support: https://getbootstrap.com/docs/4.6/components/modal/
+ */
+$('#helpModal').on('hidden.bs.modal', function (event) {
+  if (firstCard) {
+    timer();
+  }
+})
+
+/**
+* when the help modal is closed by clicking the close button, 
+* the timer will only resume if game has already started
+*/
+function resumeTimerOnModalClose() {
+  if (gameStart) {
+    timer();
+  }
+}
 
 /**
  * flips and stores the first and second clicked cards 
@@ -194,23 +216,3 @@ function switchOn(myModalId) {
      document.getElementById("totalTime").innerHTML = completedTime;
 }
 
-/**
- * when the help modal is closed by clicking off the screen instead of the button, 
- * boostrap's modal class fires an event to restart the timer
- * code support: https://getbootstrap.com/docs/4.6/components/modal/
- */
-$('#helpModal').on('hidden.bs.modal', function (event) {
-    if (firstCard) {
-      timer();
-    }
-})
-
-/**
- * when the help modal is closed by clicking the close button, 
- * the timer will only resume if game has already started
- */
-function resumeTimerOnModalClose() {
-    if (gameStart) {
-      timer();
-    }
-}
