@@ -311,7 +311,7 @@ For help with main game structure and JS functions:
 - https://www.youtube.com/watch?v=ZniVgo8U7ek 
 - https://marina-ferreira.github.io/tutorials/js/memory-game/
 - https://nualagr.github.io/the-lord-of-the-rings-game/
-- 
+
 
 For help with button styling:
 - https://www.w3schools.com/howto/howto_css_center_button.asp 
@@ -326,10 +326,6 @@ For help with coding the JS timer:
 - https://codepen.io/FoxyStoat/pen/erzLMG
 - https://www.w3schools.com/js/js_timing.asp
 - https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/
-
-
-
-
 
 
 ## References 
