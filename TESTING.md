@@ -90,6 +90,8 @@ The following popular browsers were tested:
 
 I have tested my deployed project on multiple devices to check for responsiveness issues.
 
+From this testing, I would recommend the game to be used on devices larger than 340px width and on a vertical plane (on mobile devices) - this will give a better gaming experience since the horizontal layout is not responsive with current styling - e.g. [iPhoneSE horizontal view](documentation/testing/responsive-iphoneSE-horizontal.png), and font-sizing becomes an issue at <340px.
+
 | Device | Screenshot | Notes |
 | --- | --- | --- |
 | **Small Mobile** 320x734 (DevTools) | [Main GamePlay](documentation/testing/responsive-small-mob-main.png) / [Help Modal](documentation/testing/responsive-small-mob-help.png) / [Win Modal](documentation/testing/responsive-small-mob-win.png)   | Font-sizing on cards is slightly too big for devices <340px width (see **Main GamePlay** screenshot) so the game is recommended for use on bigger screens until this error is fixed in future |
