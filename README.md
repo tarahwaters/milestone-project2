@@ -337,6 +337,10 @@ For help with coding the JS timer:
 
 - **Louise Jones' MS2**: [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
 
+- [StackOverflow](https://stackoverflow.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [JavaScript Syntax - W3 Schools](https://www.w3schools.com/js/js_syntax.asp)
+
 ## Acknowledgements
 
 - All my friends and family who tested the game and gave me valuable feedback and support along the way
