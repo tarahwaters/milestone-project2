@@ -1,122 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Preahvihear&family=Sriracha&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-color: #EBF8B8;
-    font-family: 'Preahvihear', sans-serif;
+	height: 100vh;
+	background-color: #EBF8B8;
+	font-family: 'Preahvihear', sans-serif;
 }
 
 h1 {
-    font-family: 'Kalam', sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding: 1.5rem 0 0 0;
-    text-align: center;
+	font-family: 'Kalam', sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+	padding: 1.5rem 0 0 0;
+	text-align: center;
 }
 
 h2, h3 {
-    font-family: 'Kalam', sans-serif;
-    font-weight: bold;
-    font-size: 1.8rem;
-    text-align: center;
+	font-family: 'Kalam', sans-serif;
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
 }
 
 p {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 /*--game timer and move counter--*/
 
 #game-feedback {
-    width: 25%;
-    margin: auto;
-    padding: 1rem;
-    font-size: 0.9rem;
+	width: 25%;
+	margin: auto;
+	padding: 1rem;
+	font-size: 0.9rem;
 }
 
 /*--game cards--*/
 /*--Code to style cards with flip animation from https://marina-ferreira.github.io/tutorials/js/memory-game/ --*/
 
 #cell-card-container, #descriptive-card-container {
-    width: 33vw;
-    height:33vh;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
+	width: 33vw;
+	height: 33vh;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
 }
 
 .game-card {
-    width: calc(25% - 10px);
-    height: calc(50% - 10px);
-    margin: 5px;
-    position: relative;
-    transform:scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
+	width: calc(25% - 10px);
+	height: calc(50% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
 }
 
 .game-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
+	transform: scale(.97);
+	transition: transform .2s;
 }
 
 .game-card.flip {
-    transform: rotateY(180deg); 
+	transform: rotateY(180deg);
 }
 
 .front-face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #ffe787;
-    transform: rotateY(180deg);
-    object-fit: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #ffe787;
+	transform: rotateY(180deg);
+	object-fit: contain;
 }
 
 .back-face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #2176FF;
-    backface-visibility: hidden;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #2176FF;
+	backface-visibility: hidden;
+	object-fit: cover;
 }
 
 .front-face-function {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #FFE787;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 1rem 0.2rem;
-    transform: rotateY(180deg);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFE787;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 1rem 0.2rem;
+	transform: rotateY(180deg);
 }
 
 /*--game buttons--*/
 
 #button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .game-btn {
-    text-decoration: none;
-    color: #2176FF;
-    border: 0.1rem solid ;
-    background-color: #FFE787;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
+	text-decoration: none;
+	color: #2176FF;
+	border: 0.1rem solid;
+	background-color: #FFE787;
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	border-radius: 0.5rem;
 }
 
 /*--override bootstrap styling for button pseudoclasses--*/
@@ -124,227 +124,222 @@ p {
 .btn-secondary:active,
 .btn-secondary:visited,
 .btn-secondary:focus {
-  background-color: #B65B81 !important;
-  border-color: #B65B81 !important;
+	background-color: #B65B81 !important;
+	border-color: #B65B81 !important;
 }
 
 /*--modal styling--*/
 
 #winner-gif {
-    width: 100%;
+	width: 100%;
 }
 
 .modal-content {
-    border: 0.3rem solid #2176FF;
+	border: 0.3rem solid #2176FF;
 }
 
 .modal-header, .modal-body, .modal-footer, .modal-image {
-    background-color: #fbefbf;
-    border: none;
-    text-align: center;
+	background-color: #fbefbf;
+	border: none;
+	text-align: center;
 }
 
 .modal-body {
-    padding: 0 1rem;
+	padding: 0 1rem;
 }
 
 .modal img {
-    width: 25%;
+	width: 25%;
 }
 
 /*--override bootstrap styling for modal and table--*/
 .modal-header {
-    display: inline !important;
+	display: inline !important;
 }
+
 .table>:not(caption)>*>* {
-    background-color: inherit;
+	background-color: inherit;
 }
 
 /*--footer--*/
 
 #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.7rem;
 }
 
 /*--media queries--*/
 
 @media only screen and (max-width: 400px) {
 
-    h1 {
-        font-size: 2rem;
-        padding: 0.8rem 0 0 0;
-    }
+	h1 {
+		font-size: 2rem;
+		padding: 0.8rem 0 0 0;
+	}
 
-    h2, h3 {
-        font-size: 1.8rem;
-    }
+	h2, h3 {
+		font-size: 1.8rem;
+	}
 
-     p {
-        font-size: 0.8rem;
-         margin: 0.5rem 0;
-    }
+	p {
+		font-size: 0.8rem;
+		margin: 0.5rem 0;
+	}
 
-    table {
-        font-size: 0.8rem;
-    }
-    
-   #cell-card-container, #descriptive-card-container {
-        width: 90vw;
-        height: 25vh;
-    }
+	table {
+		font-size: 0.8rem;
+	}
 
-    #game-feedback {
-        width: 95%;
-        margin: auto;
-        padding: 0.2rem 0;
-        font-size: 0.7rem;
-    }
+	#cell-card-container, #descriptive-card-container {
+		width: 90vw;
+		height: 25vh;
+	}
 
-    .front-face-function {
-        font-size: 0.5rem;
-        padding: 0.4rem 0.3rem;
-    }
+	#game-feedback {
+		width: 95%;
+		margin: auto;
+		padding: 0.2rem 0;
+		font-size: 0.7rem;
+	}
 
-    .game-btn {
-        font-size: 0.7rem;
-    }
+	.front-face-function {
+		font-size: 0.5rem;
+		padding: 0.4rem 0.3rem;
+	}
 
-       #footer {
-        font-size: 0.6rem;
-    }
+	.game-btn {
+		font-size: 0.7rem;
+	}
 
+	#footer {
+		font-size: 0.6rem;
+	}
 }
+
 @media only screen and (min-width: 400px) {
     
-    h1 {
-        font-size: 2.5rem;
-    }
+	h1 {
+		font-size: 2.5rem;
+	}
 
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-   #cell-card-container, #descriptive-card-container {
-        width: 90vw;
-        height: 25vh;
-    }
+	h2 {
+		font-size: 1.8rem;
+	}
 
-    #game-feedback {
-        width: 80%;
-        padding: 0.5rem 0;
-        font-size: 0.8rem;
-    }
+	#cell-card-container, #descriptive-card-container {
+		width: 90vw;
+		height: 25vh;
+	}
 
-    .front-face-function {
-        font-size: 0.5rem;
-        padding: 0.5rem 0.3rem;
-    }
+	#game-feedback {
+		width: 80%;
+		padding: 0.5rem 0;
+		font-size: 0.8rem;
+	}
 
-    .game-btn {
-        font-size: 0.9rem;
-    }
+	.front-face-function {
+		font-size: 0.5rem;
+		padding: 0.5rem 0.3rem;
+	}
+
+	.game-btn {
+		font-size: 0.9rem;
+	}
 }
 
 @media only screen and (min-width: 500px) {
     
-    #cell-card-container, #descriptive-card-container {
-         width: 90vw;
-         height: 30vh;
-     }
- 
-     #game-feedback {
-         padding: 0.5rem 0;
-         font-size: 1rem;
-     }
- 
-     .front-face-function {
-         font-size: 0.7rem;
-         padding: 0.8rem 0.2rem;
-     }
+	#cell-card-container, #descriptive-card-container {
+		width: 90vw;
+		height: 30vh;
+	}
 
+	#game-feedback {
+		padding: 0.5rem 0;
+		font-size: 1rem;
+	}
+
+	.front-face-function {
+		font-size: 0.7rem;
+		padding: 0.8rem 0.2rem;
+	}
 }
- 
- @media only screen and (min-width: 576px) {
+
+@media only screen and (min-width: 576px) {
      
-     #cell-card-container, #descriptive-card-container {
-         width: 80vw;
-         height: 33vh;
-     }
- 
-     #game-feedback {
-         width: 70%;
-         padding: 1rem 0;
-         font-size: 1rem;
-     }
- 
-     .front-face-function {
-         padding: 1rem 0.2rem;
-     }
+	#cell-card-container, #descriptive-card-container {
+		width: 80vw;
+		height: 33vh;
+	}
 
- }
+	#game-feedback {
+		width: 70%;
+		padding: 1rem 0;
+		font-size: 1rem;
+	}
 
- @media only screen and (min-width: 700px) {
+	.front-face-function {
+		padding: 1rem 0.2rem;
+	}
+}
 
-    #cell-card-container, #descriptive-card-container {
-        width: 75vw;
-        height: 33vh;
-    }
+@media only screen and (min-width: 700px) {
 
-     #game-feedback {
-        width: 55%;
-    }
+	#cell-card-container, #descriptive-card-container {
+		width: 75vw;
+		height: 33vh;
+	}
 
-    .front-face-function {
-        font-size: 0.8rem;
-    }
+	#game-feedback {
+		width: 55%;
+	}
+
+	.front-face-function {
+		font-size: 0.8rem;
+	}
 }
 
 @media only screen and (min-width: 900px) {
 
-    #cell-card-container, #descriptive-card-container {
-        width: 50vw;
-        height: 33vh;
-    }
+	#cell-card-container, #descriptive-card-container {
+		width: 50vw;
+		height: 33vh;
+	}
 
-    #game-feedback {
-        width: 45%;
-    }
+	#game-feedback {
+		width: 45%;
+	}
 
-    .front-face-function {
-        font-size: 0.7rem;
-    }
-
+	.front-face-function {
+		font-size: 0.7rem;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 
-    #cell-card-container, #descriptive-card-container {
-        width: 45vw;
-        height: 33vh;
-    }
+	#cell-card-container, #descriptive-card-container {
+		width: 45vw;
+		height: 33vh;
+	}
 
-    #game-feedback {
-        width: 32%;
-    }
-    
+	#game-feedback {
+		width: 32%;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
 
-     #game-feedback {
-        width: 25%;
-    }
-    
+	#game-feedback {
+		width: 25%;
+	}
 }
 
 @media only screen and (min-width: 1700px) {
 
-    #cell-card-container, #descriptive-card-container {
-        width: 33vw;
-        height: 33vh;
-    }
-    
+	#cell-card-container, #descriptive-card-container {
+		width: 33vw;
+		height: 33vh;
+	}
 }
