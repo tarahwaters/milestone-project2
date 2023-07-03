@@ -191,8 +191,10 @@ Example images of a free learning resource available to download:
 - **CSS**
 - **Bootstrap**
 - **JavaScript**
+
 - [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
 - [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
+- [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
 - Procreate iPad app - used to draw and export the cell images
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
 - [beautifytools](https://beautifytools.com/) - used for beautifying code
