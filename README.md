@@ -54,13 +54,10 @@ As a user I would like:
 - to read the rules of the game
 - to access the prelearning material before testing their knowledge during the game
 - to navigate through the elements of the game / website easily
-- **to adjust settings to suit my game-play requirements e.g.**
-    - **whether to play in-game audio**
-    - **choosing the level of challenge**
 - to receive ongoing feedback about my progression through the game
 - to have fun while playing the game (and also learn!).
 - to learn some interesting facts about specialised cells
-- **to have the option of viewing and downloading a summary of the cell types and their functions**
+- to have the option of viewing and downloading a summary of the cell types and their functions
 - to restart the game to play again
 
 #### Site Owner
