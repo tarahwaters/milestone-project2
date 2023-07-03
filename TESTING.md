@@ -97,8 +97,8 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | **Large Mobile** 412x915 (Samsung s20 Ultra) | [Main GamePlay](documentation/testing/responsive-large-mob-main.png) / [Help Modal](documentation/testing/responsive-large-mob-help.png) / [Win Modal](documentation/testing/responsive-large-mob-win.png) | Works as expected |
 | **Tablet** 786x734 (iPad Pro) | [Main GamePlay](documentation/testing/responsive-tablet-main.png) / [Help Modal](documentation/testing/responsive-tablet-help.png) / [Win Modal](documentation/testing/responsive-tablet-win.png) | DevTools shows backfaces of cards to be more zoomed in than expected (on vertical viewing), but this does not distort the image and the user can still read the card. Hoirzontal viewing works as expected |
 | **17" Laptop** 1707x960 | [Main GamePlay](documentation/testing/responsive-17laptop-main.png) / [Help Modal](documentation/testing/responsive-17laptop-help.png) / [Win Modal](documentation/testing/responsive-17laptop-win.png) | Works as expected   |
-| **22" Desktop** 1680x1050 | ![screenshot](documentation/testing/responsive-laptop-lg-1440px.png) | Hero-image cover text smaller than expected here but only minor issue |
-| **4K Monitor** 2560x1506 | ![screenshot](documentation/testing/responsive-4k-2560px.png) | Works as expected |
+| **22" Desktop** 1680x1050 | [Main GamePlay](documentation/testing/responsive-22desktop-main.png) / [Help Modal](documentation/testing/responsive-22desktop-help.png) / [Win Modal](documentation/testing/responsive-22desktop-win.png) | Works as expected |
+| **4K Monitor** 2560x1506 | [Main GamePlay](documentation/testing/responsive-4Kdesktop-main.png) / [Help Modal](documentation/testing/responsive-4Kdesktop-help.png) / [Win Modal](documentation/testing/responsive-4Kdesktop-win.png) | Works as expected after adding a final media query to target screens over 2000px width (font sizing was previously a little small) |
 
 ## Lighthouse Audit
 
