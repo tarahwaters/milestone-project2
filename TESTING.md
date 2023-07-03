@@ -17,9 +17,9 @@ I will not validate external libraries/frameworks, such as imported Bootstrap et
 
 ### HTML
 
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate the HTML file.
 
-I validated each of the live pages using the deployed URL. This gave me a custom URL for each page which I have included in the documentation below. This will make it easier to return to each page when validating again in future.
+I validated the live page using the deployed URL. This gave me a custom URL which I have included in the documentation below. This will make it easier when validating again in future.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
