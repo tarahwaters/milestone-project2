@@ -111,7 +111,7 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | Home | Mobile | ![Lighthouse Results Mobile Screenshot](documentation/testing/lighthouse-mob-results.png) | **Pass** |
 | Home | Desktop | ![Lighthouse Results Desktop Screenshot](documentation/testing/lighthouse-desktop-results.png) | **Pass** |
 
-Note for future development - backface colour contrast of the function cards may not be visually assessible / comfortable for some users, so this will be taken into consideration when developing further. For the moment, it doesn't impact the functioning of the game too much as the text is still clear against the background.
+**Note for future development** - backface colour contrast of the function cards may not be visually assessible / comfortable for some users, so this will be taken into consideration when developing further. For the moment, it doesn't impact the functioning of the game too much as the text is still clear against the background.
 
 ## User Story Testing
 
