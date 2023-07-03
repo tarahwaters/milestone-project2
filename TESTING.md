@@ -129,6 +129,8 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | As a user I want to have fun while playing the game (and also learn!). | ![screenshot](documentation/testing/user-story-submit-confirmation.jpg) | Friends and family who have tried the game already have said it's a fun and easy game to play, and you can learn something without having to focus too hard. The flipping animation is appealing due to its simplicity and smoothness. Also users who are competitive can aim to complete the game faster and in fewer moves, and with repeition they may retain more information about the content. The extra resources also provide users with more opportunities to practise their learning in a similar visual style. |
 | As a user I want to have the option of viewing and downloading a summary of the cell types and their functions | ![screenshot](documentation/testing/user-story-submit-confirmation.jpg) | Links to 2 pdf documents containing card summaries and printable flashcards can be viewed / downloaded upon completing of a game (from within the win modal) |
 | As a user to restart the game to play again |  ![screenshot](documentation/testing/user-story-submit-confirmation.jpg) | The 'Reset' button or 'Play again!' button can be clicked to reset the game, or alternatively the page can be refreshed |
+| As a user I want to have an option of playing an increased level of difficulty | N/A | This feature wasn't achieved during this stage of the development but please see [Future Features](README.md#future-features)
+
 
 ## Issues / Bugs
 
