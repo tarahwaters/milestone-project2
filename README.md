@@ -308,24 +308,24 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 ## Credits
 
 For help with main game structure and JS functions:
-- https://www.youtube.com/watch?v=ZniVgo8U7ek 
-- https://marina-ferreira.github.io/tutorials/js/memory-game/
-- https://nualagr.github.io/the-lord-of-the-rings-game/
+- [FreeCodeCamp.Org JavaScript Memory Game tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+- [Marina Ferreira JS Memory Game tutorial](https://marina-ferreira.github.io/tutorials/js/memory-game/)
+- [Nuala Greenwood MS2 Lord of The Rings Memory Card Game](https://nualagr.github.io/the-lord-of-the-rings-game/)
 
 
 For help with button styling:
-- https://www.w3schools.com/howto/howto_css_center_button.asp 
-- https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/
-- https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap
+- [W3 Schools](https://www.w3schools.com/howto/howto_css_center_button.asp)
+- [Moira Hartigan PP2 Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
+- [StackOverflow](https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap)
 
 For help with coding the JS move counter:
-- https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
-- https://www.youtube.com/watch?v=xWdkt6KSirw 
+- [Dev.to Memory Card Game Tutorial by Adam Nagy](https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1)
+- [YoutTube Memory Card Game Tutorial by Adam Nagy](https://www.youtube.com/watch?v=xWdkt6KSirw)
 
 For help with coding the JS timer:
-- https://codepen.io/FoxyStoat/pen/erzLMG
-- https://www.w3schools.com/js/js_timing.asp
-- https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/
+- [CodePen](https://codepen.io/FoxyStoat/pen/erzLMG)
+- [W3 Schools](https://www.w3schools.com/js/js_timing.asp)
+- [Moira Hartigan PP2 Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/)
 
 
 ## References 
