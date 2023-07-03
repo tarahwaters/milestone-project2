@@ -305,11 +305,41 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-## References
+## Credits
 
-- **Moira Hartigan's PP2** [Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) - deployed project and [github](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
-- **Nuala Greenwood's MS2** [Lord Of The Rings Game](https://nualagr.github.io/the-lord-of-the-rings-game/) - deployed project and [github](https://github.com/nualagr/the-lord-of-the-rings-game)
-- **Louise Jones' MS2** [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
+For help with main game structure and JS functions:
+- https://www.youtube.com/watch?v=ZniVgo8U7ek 
+- https://marina-ferreira.github.io/tutorials/js/memory-game/
+- https://nualagr.github.io/the-lord-of-the-rings-game/
+- 
+
+For help with button styling:
+- https://www.w3schools.com/howto/howto_css_center_button.asp 
+- https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/
+- https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap
+
+For help with coding the JS move counter:
+- https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1
+- https://www.youtube.com/watch?v=xWdkt6KSirw 
+
+For help with coding the JS timer:
+- https://codepen.io/FoxyStoat/pen/erzLMG
+- https://www.w3schools.com/js/js_timing.asp
+- https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/
+
+
+
+
+
+
+## References 
+
+- **Marina Ferreira**: [Memory Card Game - JavaScript Tutorial](https://marina-ferreira.github.io/tutorials/js/memory-game/)
+- **Moira Hartigan's PP2**: [Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) - deployed project and [github](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
+
+- **Nuala Greenwood's MS2**: [Lord Of The Rings Game](https://nualagr.github.io/the-lord-of-the-rings-game/) - deployed project and [github](https://github.com/nualagr/the-lord-of-the-rings-game)
+
+- **Louise Jones' MS2**: [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
 
 
 
