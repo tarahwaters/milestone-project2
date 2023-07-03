@@ -2,7 +2,7 @@
 
 
 # Specialised Cells 🔬
-# - a GCSE Biology Revision Game
+# - a GCSE Biology Matching Pairs Revision Game
 
 ------
 
