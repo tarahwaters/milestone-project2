@@ -89,8 +89,6 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ## Structure
 
-### Features
-
 ### Existing Features
 
 - **How To Play Button**
@@ -103,11 +101,24 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
     - The mobile nav bar toggler, accessible on smaller mobile devices, collapses the navbar into a simple menu button that when clicked can open a list of the pages of the website. This allows for a cleaner UX design which takes up less space, but provides the user with the necessary navigation options. Clicking the icon opens the menu, and clicking again can close the menu.
 
-    ![screenshot](documentation/readme/feature-help-modal.png)
 
 - **Help Modal**
 
-    - This feature contains images to visually and clearly explain the card match pairs (important, because the user has the option of clicking two of the same 'type' of card for efficiency, but they need to know this will not create a match). It also contains a table displaying the card images and their matching descriptions to provide learning support for the user. The user can understand how to start the game (if they are unsure) by reading "Click any card to start the game!". The help modal can be opened at any time during the game to remind users of how to play.
+    - This feature contains images to visually and clearly explain the card match pairs (important, because the user has the option of clicking two of the same 'type' of card for efficiency, but they need to know this will not create a match). It also contains a table displaying the card images and their matching descriptions to provide learning support for the user. The user can understand how to start the game (if they are unsure) by reading "Click any card to start the game!". The help modal can be opened at any time during the game to remind users of how to play. The Boostrap modal contains a 'close' button to exit the modal (or the user can click the background screen to close).
+
+    ![screenshot](documentation/readme/feature-help-modal.png)
+
+- **Win Modal**
+
+    - This feature pops open when a game has been completed (all 8 pairs of cards are matched). It shows a message congratulating the user on completing the game with an animated gif as a celebration. The user's final game time and move counter is included for reference. There are also links to downloadable content (x2 pdf files) which can supplement learning further. There is a 'Play Again!' button included at the bottom so users can restart the game / return to the main page after playing.
+    
+    ![screenshot](documentation/readme/feature-win-message.png)
+
+- **Game Card Grid**
+
+    - This feature contains all 16 game cards, separated into 2 well-defined grid containers which are easily distinguished by different card backface designs - cell type (images) and functions (written descriptions). There are 8 matching pairs and the cards flipto reveal their identity upon being clicked. When cards are matched, they remain open. If two cards are clicked that aren't a match, they flip back, allowing the user to try again until they match all pairs.
+
+    ![screenshot](documentation/readme/feature-game-grid.png)
 
 
 
