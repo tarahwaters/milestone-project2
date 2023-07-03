@@ -90,7 +90,28 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 ## Structure
 
 ### Features
+
 ### Existing Features
+
+- **How To Play Button**
+
+    - When clicked, this button opens a modal with instructions on how start and play the game. 
+
+    ![screenshot](documentation/readme/feature-game-buttons.png)
+
+- **Reset Button**
+
+    - The mobile nav bar toggler, accessible on smaller mobile devices, collapses the navbar into a simple menu button that when clicked can open a list of the pages of the website. This allows for a cleaner UX design which takes up less space, but provides the user with the necessary navigation options. Clicking the icon opens the menu, and clicking again can close the menu.
+
+    ![screenshot](documentation/readme/feature-help-modal.png)
+
+- **Help Modal**
+
+    - This feature contains images to visually and clearly explain the card match pairs (important, because the user has the option of clicking two of the same 'type' of card for efficiency, but they need to know this will not create a match). It also contains a table displaying the card images and their matching descriptions to provide learning support for the user. The user can understand how to start the game (if they are unsure) by reading "Click any card to start the game!". The help modal can be opened at any time during the game to remind users of how to play.
+
+
+
+
 ### Future Features
 
 ---
