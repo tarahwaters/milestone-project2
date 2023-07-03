@@ -199,12 +199,25 @@ Example images of a free learning resource available to download:
 ![Specialised Cells Flashcards Page 1](/documentation/readme/specialised-cells-flashcards-page1.png "Specialised Cells Flashcards Page 1")
 ![Specialised Cells Flashcards Page 2](/documentation/readme/specialised-cells-flashcards-page2.png "Specialised Cells Flashcards Page 2")
 
-## Technologies Used:
+## Tools and Technologies Used:
 
 - **HTML5**
 - **CSS**
 - **Bootstrap**
 - **JavaScript**
+- [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
+- [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
+- Procreate iPad app - used to draw and export the cell images
+- [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
+- [beautifytools](https://beautifytools.com/) - used for beautifying code
+- [Coolors](https://coolors.co/) - used to generate a color palette for the website design
+- [Canva](https://www.canva.com/) - used to design and edit the card images, gifs and pdf resources used in the game
+- [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
+- [JSHint](https://jshint.com/) - used to validate JS code
+- [Esprima](https://esprima.org/demo/validate.html) - used to validate JS syntax
+- [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML
+- [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
+
 
 ## Testing:
 
@@ -246,7 +259,6 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 
 ## References
 
-- [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
 - **Moira Hartigan's PP2** [Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) - deployed project and [github](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
 - **Nuala Greenwood's MS2** [Lord Of The Rings Game](https://nualagr.github.io/the-lord-of-the-rings-game/) - deployed project and [github](https://github.com/nualagr/the-lord-of-the-rings-game)
 - **Louise Jones' MS2** [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
