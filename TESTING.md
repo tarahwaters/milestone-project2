@@ -93,7 +93,7 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | Device | Screenshot | Notes |
 | --- | --- | --- |
 | **Small Mobile** 320x734 (DevTools) | [Main GamePlay](documentation/testing/responsive-small-mob-main.png) / [Help Modal](documentation/testing/responsive-small-mob-help.png) / [Win Modal](documentation/testing/responsive-small-mob-win.png)   | Works as expected |
-| **Medium Mobile** 375x374 (iPhone SE using DevTools) | ![screenshot](documentation/testing/responsive-mob-iphoneSE.png) | Works as expected |
+| **Medium Mobile** 375x374 (iPhone SE using DevTools) | [Main GamePlay](documentation/testing/responsive-med-mob-main.png) / [Help Modal](documentation/testing/responsive-med-mob-help.png) / [Win Modal](documentation/testing/responsive-med-mob-win.png) | Works as expected |
 | **Large Mobile** 412x915 (Samsung s20 Ultra) | ![screenshot](documentation/testing/responsive-mob-samsung-s20-ultra.png) | Works as expected |
 | **Tablet** 786x734 (iPad Pro) | ![screenshot](documentation/testing/responsive-tablet-768px.png) | Works as expected |
 | **17" Laptop** 1707x960 | ![screenshot](documentation/testing/responsive-laptop-1024px.png) | Works as expected   |
