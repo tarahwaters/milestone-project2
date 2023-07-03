@@ -120,10 +120,38 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
     ![screenshot](documentation/readme/feature-game-grid.png)
 
+- **Timer**
 
+    - This feature starts when the game begins (ie when a card is clicked). It starts from 00:00 and increments in seconds and minutes. The timer pauses when the help modal is open, so that users can stop to view the instructions without affecting their game time. When the modal closes, the timer resumes. The final time is logged in the win modal message so the user can aim to beat their score if they play again.
+
+    ![screenshot](documentation/testing/user-story-game-feedback.png)
+
+- **Move Counter**
+
+    - The move counter starts whem the game begins and the first pair of cards have been clicked. It starts from zero and one move is added for each pair of cards that are attempted as a match. The final move count is logged in the win modal message so the user can aim to beat their score if they play again.
+
+    ![screenshot](documentation/readme/feature-win-message.png)
+
+- **Extra Revision Resources**
+
+    - Links to free revision resources are included as a reward for completing the game and they are accessible from within the win modal message. Links open in a separate tab and offer a set of infocards / flashcards that the user can print and use at home.
+
+    ![screenshot](documentation/testing/user-story-resources.png)
 
 
 ### Future Features
+
+- **Option to increase difficulty level**
+    - The infocards have already been designed with the potential to include 3 separate details to test learning of specialised cells knowledge (required for the GCSE Biology curriculum) - function / location / features. There could be increased difficulties levels where descriptions contain more complex information, or more cell types could be added as a bonus challenge.
+
+- **Different related topic themes**
+    - There could be an option to also add more revision topics to the game so the user can improve their knowledge in other areas of the curriculum.
+
+- **Option of sounds effects**
+    - Sound effects could be added for when cards are clicked, flipped, matched or not matched. This could be more fun and engaging for the user, and also gives them instant feedback of success or error which may improve learning. This feature could be made optional for when the user prefers a quiet game.
+
+- **Improved responsiveness for smaller devices and for different screen orientations**
+    - Details of some issues regarding responsiveness are detailed in the [TESTING.md](TESTING.md) file and these would be worked on in future development. Adding more cell cards as options for the game, could allow the grid layout to be changed (e.g. maximum 3x6 instead of 4x4) to optimise card readability. In future, it may be preferable to also use a responsive grid framework (from Boostrap for example) to avoid some of the issues I faced during styling.
 
 ---
 
