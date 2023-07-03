@@ -64,7 +64,7 @@ The following popular browsers were tested:
 | Chrome | ![Chrome Compatibility Screenshot](documentation/testing/compatibility-chrome.png) | Works as expected |
 | Firefox | ![Firefox Compatibility Screenshot](documentation/testing/compatibility-firefox.png) | Works as expected |
 | Edge | ![Edge Compatibility Screenshot](documentation/testing/compatibility-edge.png) | Backface of card designs don't fully fit but this does not distort the image quality. Font-sizing of function descriptions is smaller than on other browsers but does not reduce functionality / usability |
-| Safari | ![screenshot](documentation/testing/compatibility-safari.jpeg) | Works as expected |
+| Safari | ![Safari Compatibility Screenshot](documentation/testing/compatibility-safari.jpeg) | Works as expected |
 | Brave | ![Brave Comptibility Screenshot](documentation/testing/compatibility-brave.png) | Works as expected |
 | Opera | ![Opera Compatibility Screenshot](documentation/testing/compatibility-opera.png) | Same as Edge - Backface of card designs don't fully fit but this does not distort the image quality. Font-sizing of function descriptions is smaller than on other browsers but does not reduce functionality / usability |
 
