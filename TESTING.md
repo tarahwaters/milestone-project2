@@ -23,7 +23,7 @@ I validated each of the live pages using the deployed URL. This gave me a custom
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F) | ![screenshot](documentation/testing/html-validation-results.png) | Pass: No Errors, 1 warning due to code credit url |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F) | ![screenshot](documentation/testing/validation-html-results.png) | Pass: No Errors, 1 warning due to code credit url |
 
 ### CSS
 
@@ -38,14 +38,14 @@ The deployed URL was used to validate the CSS since a single file was used for t
 
 ### JavaScript
 
-I have used the recommended [JS Lint](https://www.jslint.com/) to validate my JS script.
+I have used the recommended [JS Hint](https://jshint.com/) to validate my JS script and also [Esprima](https://esprima.org/demo/validate.html) to check for any syntax errors.
 
 <!-- The deployed URL was used to validate the JS since a single file was used for the project. This gave a custom URL which is included and can be used for future validation. Evidence from the direct code input validation was also included. -->
 
-| File | JSLint URL | Screenshot | Notes |
+| File | Validator Tool |Screenshot | Notes |
 | --- | --- | --- | --- |
-<!-- | style.css | [Jigsaw - deployed link](#) | ![screenshot](documentation/testing/validation-css-deployed-link.png) | The errors shown are from imported Boostrap styling. The warnings are from Bootstrap and also **-webkit-fill-available** is a vendor extension |
-| style.css | [Jigsaw - direct input link](#)  |![screenshot - direct input](documentation/testing/validation-css-code.png)  | Pass: No Errors | -->
+| script.js | [JSHint](https://jshint.com/) |![JSHint Results Screenshot](documentation/testing/validation-js-jshint-results.png) | **Pass**: no errors found after adding code to bypass undefined $ jquery and es6 version errors (support found from stackoverflow: [undefined jquery](https://stackoverflow.com/questions/39510736/eslint-dollar-is-not-defined-no-undef) and [es6 errors](https://stackoverflow.com/questions/54647294/const-is-available-in-es6-use-esversion-6) in JSHint) |
+| script.js | [Esprima](https://esprima.org/demo/validate.html)  |![Esprima Results Screenshot](documentation/testing/validation-js-esprima-syntax-results.png)  | **Pass**: No Errors |
 
 ## Browser Compatibility
 
