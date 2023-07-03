@@ -329,7 +329,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1500px) {
 
 	#game-feedback {
 		width: 25%;
@@ -341,5 +341,33 @@ p {
 	#cell-card-container, #descriptive-card-container {
 		width: 33vw;
 		height: 33vh;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	.front-face-function {
+		font-size: 1.5rem;
+	}
+
+	#game-feedback {
+		font-size: 1.5rem;
+	}
+
+	.game-btn {
+		font-size: 1.5rem;
+		margin: 1rem;
+	}
+
+	#footer {
+		font-size: 1rem;
 	}
 }
