@@ -130,12 +130,6 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 | As a user I want to have the option of viewing and downloading a summary of the cell types and their functions | ![screenshot](documentation/testing/user-story-submit-confirmation.jpg) | Links to 2 pdf documents containing card summaries and printable flashcards can be viewed / downloaded upon completing of a game (from within the win modal) |
 | As a user to restart the game to play again |  ![screenshot](documentation/testing/user-story-submit-confirmation.jpg) | The 'Reset' button or 'Play again!' button can be clicked to reset the game, or alternatively the page can be refreshed |
 
-| Site Owner Story | Screenshot | Notes |
-| --- | --- | --- |
-| As a site owner I want users to find out about our services and team | ![screenshot](documentation/testing/user-story-team-details.jpg) | There is information about the company and its team acccessible from the Home and About page. |
-| As a site owner I want users to submit their contact details and arrange schedule a meeting with us. | ![screenshot](documentation/testing/user-story-get-in-touch.jpg) ![screenshot](documentation/testing/user-story-contact-form.jpg) | Contact form is accessible at the bottom of each page as per the client's specifications and the button 'Get in touch' will take the user straight to the form. |
-| As a site owner I want users to know the positive success we have had with other clients and the process involved when working with us | ![screenshot](documentation/testing/user-story-reviews.jpg) | The Review section of the Home page gives details of positive feedback from other clients, but the Study Abroad page was intended to outline the company's process in more detail (unable to achieve at this time, but a part of **Future Features**.)
-
 ## Issues / Bugs
 
 - Fixed bugs
