@@ -337,5 +337,15 @@ For help with coding the JS timer:
 
 - **Louise Jones' MS2**: [Tropical Birds Memory Game](https://louisejones101.github.io/memory-game/) - deployed project and [github](https://github.com/louisejones101/memory-game)
 
+## Acknowledgements
+
+- All my friends and family who tested the game and gave me valuable feedback and support along the way
+- Code Institute Tutor support
+- Cohort Facilitator - [Iris Smok](https://ie.linkedin.com/in/irissmok)
+- Mentor for support throughout the project
+- Cohort peers and Slack community, especially:
+    - [@Nathan Parry_4P_cohort_lead](https://app.slack.com/client/T0L30B202/D04ULFN551P/rimeto_profile/U04EX23NTND) support with coding advice and encouragement 
+    - [@Paul Treggiden](https://app.slack.com/client/T0L30B202/D04UYMV6WBG/rimeto_profile/U043S9PT5E1) support with coding advice and encouragement
+
 
 
