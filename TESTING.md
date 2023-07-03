@@ -72,8 +72,8 @@ The following popular browsers were tested:
 
 | Feature | Expect | Action | Result |
 | --- | --- | --- | --- |
-| **Home Navbar Button** | When clicked the Home page will open | Clicked Home on the Nav bar | Home page opened when clicked |
-| **About Navbar Button** | When clicked the About page will open | Clicked About on the Nav bar | About page opened when clicked |
+| **Gamegrid** | All cards showing their backfaces, gamegrid in clear view (with no modals open), move counter and timer set to zero | Opened / refreshed the page | Gamegrid and scores are reset and ready for gameplay, modals are hidden |
+| **Reset button** | When clicked the game will refresh and the game will reset | Clicked Reset button | Page refreshed, cards reset to starting position, move counter and timer reset to zero |
 | **Contact Navbar Button** | When clicked the Contact page will open | Clicked Contact on the Nav bar | Contact page opened when clicked |
 | **Summit logo / Brand name on Navbar** | When clicked the Home page will open | Clicked the logo or brand name on the Nav bar | Home page opened when clicked |
 | **Menu Item Button** (screens less than 1400px width) | When clicked the menu item list will open and drop down | Clicked the menu button | Menu list opened |
