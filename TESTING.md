@@ -72,7 +72,7 @@ The following popular browsers were tested:
 
 | Feature | Expect | Action | Result |
 | --- | --- | --- | --- |
-| **Gamegrid** | All cards showing their backfaces, gamegrid in clear view (with no modals open), move counter and timer set to zero. | Opened / refreshed the page. | Gamegrid and scores are reset and ready for gameplay, modals are hidden. |
+| **Gamegrid** | All cards showing their backfaces, gamegrid in clear view (with no modals open), move counter and timer set to zero. | Opened / refreshed the page. | Gamegrid and scores were reset to 0 and ready for gameplay, modals were hidden. |
 | **Reset button** | When clicked the game will refresh and the game will reset. | Clicked Reset button. | Page refreshed, cards reset to starting position, move counter and timer reset to zero. |
 | **How To Play button** | When clicked the 'How To Play'' modal will open (if a game has already started, the timer will pause). | Clicked the How To Play button. | 'How To Play' modal opened when clicked, timer pauses if a game has started. |
 | **Close button in 'How To Play' modal** | When clicked the modal will close and the timer will resume (if game has started) or will remain at 00:00 if no game has started. | Clicked the close button (may need to scroll down on smaller devices). | Modal closed when button clicked and timer either stayed at 00:00 or resumed if paused (please see [Issues / Bugs](#issues-/-bugs) section for timer anomaly error in some situations - occasionally there is an out of sync timer when resuming after pause).|
