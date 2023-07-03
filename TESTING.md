@@ -92,13 +92,12 @@ I have tested my deployed project on multiple devices to check for responsivenes
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| **Small Mobile** 320x734 (DevTools) | ![screenshot](documentation/testing/responsive-mob-small-320px.png) | Works as expected |
+| **Small Mobile** 320x734 (DevTools) | [Main GamePlay](documentation/testing/responsive-small-mob-main.png) / [Help Modal](documentation/testing/responsive-small-mob-help.png) / [Win Modal](documentation/testing/responsive-small-mob-win.png)   | Works as expected |
 | **Medium Mobile** 375x374 (iPhone SE using DevTools) | ![screenshot](documentation/testing/responsive-mob-iphoneSE.png) | Works as expected |
 | **Large Mobile** 412x915 (Samsung s20 Ultra) | ![screenshot](documentation/testing/responsive-mob-samsung-s20-ultra.png) | Works as expected |
-| **Tablet** 786x734 | ![screenshot](documentation/testing/responsive-tablet-768px.png) | Works as expected |
-| **Laptop** 1024x734 | ![screenshot](documentation/testing/responsive-laptop-1024px.png) | Works as expected   |
-| **Large Laptop** 1440x734 | ![screenshot](documentation/testing/responsive-laptop-lg-1440px.png) | Hero-image cover text smaller than expected here but only minor issue |
-| **Desktop** 1920x1080 | ![screenshot](documentation/testing/responsive-desktop-1920px.png) | Works as expected |
+| **Tablet** 786x734 (iPad Pro) | ![screenshot](documentation/testing/responsive-tablet-768px.png) | Works as expected |
+| **17" Laptop** 1707x960 | ![screenshot](documentation/testing/responsive-laptop-1024px.png) | Works as expected   |
+| **22" Desktop** 1680x1050 | ![screenshot](documentation/testing/responsive-laptop-lg-1440px.png) | Hero-image cover text smaller than expected here but only minor issue |
 | **4K Monitor** 2560x1506 | ![screenshot](documentation/testing/responsive-4k-2560px.png) | Works as expected |
 
 ## Lighthouse Audit
