@@ -23,7 +23,7 @@ I validated the live page using the deployed URL. This gave me a custom URL whic
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F) | ![screenshot](documentation/testing/validation-html-results.png) | Pass: No Errors, 1 warning due to code credit url |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F) | ![HTML Validation Results Screenshot](documentation/testing/validation-html-results.png) | **Pass**: No Errors, 1 warning due to code credit url |
 
 ### CSS
 
@@ -33,8 +33,8 @@ The deployed URL was used to validate the CSS since a single file was used for t
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw - deployed link](#) | ![screenshot](documentation/testing/validation-css-deployed-link.png) | The errors shown are from imported Boostrap styling. The warnings are from Bootstrap and also **-webkit-fill-available** is a vendor extension |
-| style.css | [Jigsaw - direct input link](#)  |![screenshot - direct input](documentation/testing/validation-css-code.png)  | Pass: No Errors |
+| style.css | [Jigsaw - deployed link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftarahwaters.github.io%2Fmilestone-project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![Jigsaw Deployed Link Results Screenshot](documentation/testing/validation-css-deployed-link.png) | **Pass**: no errors, warnings shown are from imported Boostrap styling and also **-webkit-fill-available** is a vendor extension |
+| style.css | [Jigsaw - direct input link](https://jigsaw.w3.org/css-validator/validator)  |![Jigsaw Direct Input Results Screenshot](documentation/testing/validation-css-direct-input.png)  | **Pass**: No Errors, warnings are from Boostrap button styling |
 
 ### JavaScript
 
