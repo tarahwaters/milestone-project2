@@ -168,7 +168,7 @@ The main game page consists of:
 - A countdown timer is on the top left corner ofthe gamegrid - displays how many seconds are remaining during a game
 - A moves counter that is on the top right corner of the gamegrid - displays the number of moves made during a game
 - A gamegrid of separated into x2 8 divs displaying the rear side of the cards - two cards can be flipped over at a time to make a match
-- A restart button is underneath the gamegrid - gives the user the option to reset the game to the beginning
+- A reset button is underneath the gamegrid - gives the user the option to reset the game to the beginning
 - A howtoplay button is underneath the gamegrid - gives the user the option to view the game instructions and access the prelearning material
 - A footer which contains a copyright statement
 
