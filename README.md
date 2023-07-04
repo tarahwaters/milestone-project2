@@ -153,6 +153,9 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 - **Improved responsiveness for smaller devices and for different screen orientations**
     - Details of some issues regarding responsiveness are detailed in the [TESTING.md](TESTING.md) file and these would be worked on in future development. Adding more cell cards as options for the game, could allow the grid layout to be changed (e.g. maximum 3x6 instead of 4x4) to optimise card readability. In future, it may be preferable to also use a responsive grid framework (from Boostrap for example) to avoid some of the issues I faced during styling.
 
+- **Improve the colour contrast of backface designs** 
+    - Although this was not flagged up as an error during testing, it was considered a warning (and as feedback from user testing). The red/blue colour combination of backfaces for the function cards, may be redesigned for future. Currently, it does not affect readability of the 'Function' name, but may be slightly straining for the eyes. Perhaps an option could be included to toggle between different colour schemes for the game depending on the user's preference or needs.
+
 ---
 
 ## Skeleton
