@@ -322,7 +322,7 @@ For help with button styling:
 
 For help with coding the JS move counter:
 - [Dev.to Memory Card Game Tutorial by Adam Nagy](https://dev.to/javascriptacademy/creating-a-memory-card-game-with-html-css-and-javascript-57g1)
-- [YoutTube Memory Card Game Tutorial by Adam Nagy](https://www.youtube.com/watch?v=xWdkt6KSirw)
+- [YouTube Memory Card Game Tutorial by Adam Nagy](https://www.youtube.com/watch?v=xWdkt6KSirw)
 
 For help with coding the JS timer:
 - [CodePen](https://codepen.io/FoxyStoat/pen/erzLMG)
