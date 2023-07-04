@@ -134,5 +134,20 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 
 ## Issues / Bugs
 
-- Fixed bugs
-- Ongoing Issues
+Some of these issues are part of the overall game development and so may not be considered as 'bugs' but I still thought it would be useful and relevant to talk about them here as they were all a part of the troubleshooting process.
+
+### Game Development and Fixed Bugs ✅
+
+**Preventing more than 2 cards flipping at a time** - A JS variable was declared called 'lockMoves'along with an 'if' statement which, when true, does not allow another card to be clicked until a pair has been matched or flipped back. This was important because early on in the game, extra clicking made the game prone to freezing which could not be undone unless the game was reset.
+
+**Same card click freezing the game** - This issue is highly relevant for memory card games that pair two of the same cards together for a match, whereby clicking the same card could be considered 'a match'. Since my game matches pairs that are not identical, users are less likely to try and pair the same card together but it was still necessary to prevent this so that the correct matches could be checked for. This then allowed me to develop a 'completedPairs' condition to provide feedback for matching all pairs and 'winning' the game. Clicking on the same card twice was also causing glitches / freezing the game so this needed to be addressed. This was fixed by including a matching condition in JS that first checked for a match (checkForMatch()) by comparing the first and second card dataset.match, then removed the click eventlisteners for the cards if they matched (so they are disabled from any further flips).
+
+**Shuffling of all cards at the same time, but not in the same grid** - In the early stages of the game, all cards were going to be shuffled together in one grid (which is evident from the initial [Wireframes](README.md#wireframes) I had designed). Most card matching games on the internet use identical pairs where the backfaces are all one design, but when discussing the project idea with my mentor, he advised against this. 
+
+If all cards were shuffled together, it would not be clear enough to the user which pairs of cards could be matched. I then designed different backfaces for the card types (cell type vs function), and tried having the cards all shuffle together for simplicity. This worked, but my mentor thought the UX could be improved further by physically separating the cards by their 'type'. I revisted my designs, and created separate grids for the 2 sets of cards and styled them so that they would operate in exactly the same way, and as part of the main gamegrid square. They are also called upon to shuffle in the same way, but separately, so that there is a clear distinction between cards and users can make their choice of which to match. 
+
+I decided not to incorporate JS code that would prevent the user from flipping two cards of a similar type (i.e. a cell type with another cell type), because it can be effective for the user to flip two images / functions to first make the correct match association (which stimulates the learning of the science) before using their memory to locate the cards. This can speed up the game and reduce frustration for the user as they play.
+
+
+
+### Ongoing Issues ❌
